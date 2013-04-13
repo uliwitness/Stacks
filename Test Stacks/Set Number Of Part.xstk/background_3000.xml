@@ -7,4 +7,76 @@
 	<cantDelete><false /></cantDelete>
 	<dontSearch><false /></dontSearch>
 	<script></script>
+	<part>
+		<id>1</id>
+		<type>button</type>
+		<layer>background</layer>
+		<visible><true /></visible>
+		<enabled><true /></enabled>
+		<rect>
+			<left>106</left>
+			<top>82</top>
+			<right>218</right>
+			<bottom>122</bottom>
+		</rect>
+		<style>standard</style>
+		<showName><true /></showName>
+		<highlight><false /></highlight>
+		<autoHighlight><true /></autoHighlight>
+		<sharedHighlight><false /></sharedHighlight>
+		<family>0</family>
+		<titleWidth>0</titleWidth>
+		<icon>0</icon>
+		<dontWrap><false /></dontWrap>
+		<dontSearch><false /></dontSearch>
+		<sharedText><false /></sharedText>
+		<fixedLineHeight><false /></fixedLineHeight>
+		<autoTab><false /></autoTab>
+		<lockText><false /></lockText>
+		<autoSelect><false /></autoSelect>
+		<multipleLines><false /></multipleLines>
+		<showLines><false /></showLines>
+		<wideMargins><false /></wideMargins>
+		<currentTime>0:00:00:00.00/1</currentTime>
+		<controllerVisible><false /></controllerVisible>
+		<fillColor>
+			<red>65535</red>
+			<green>65535</green>
+			<blue>65535</blue>
+			<alpha>65535</alpha>
+		</fillColor>
+		<lineColor>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+			<alpha>65535</alpha>
+		</lineColor>
+		<shadowColor>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+			<alpha>0</alpha>
+		</shadowColor>
+		<shadowOffset>
+			<width>0</width>
+			<height>0</height>
+		</shadowOffset>
+		<shadowBlurRadius>0</shadowBlurRadius>
+		<lieWidth>0</lieWidth>
+		<textAlign>center</textAlign>
+		<font>Lucida Grande</font>
+		<textSize>13</textSize>
+		<hasHorizontalScroller><false /></hasHorizontalScroller>
+		<hasVerticalScroller><false /></hasVerticalScroller>
+		<name>New Button</name>
+		<script>on mouseUp
+	set the number of me to number of card buttons
+end mouseUp</script>
+	</part>
+	<content>
+		<layer>card</layer>
+		<id>-1</id>
+		<text></text>
+		<highlight><false /></highlight>
+	</content>
 </background>

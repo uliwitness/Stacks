@@ -16,4 +16,5 @@
 	<script></script>
 	<background id="3000" file="background_3000.xml" />
 	<card id="3001" file="card_3001.xml" marked="false" />
+	<card id="3002" file="card_3002.xml" marked="false" />
 </stack>

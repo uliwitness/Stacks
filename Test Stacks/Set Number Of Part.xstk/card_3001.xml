@@ -8,6 +8,72 @@
 	<dontSearch><false /></dontSearch>
 	<script></script>
 	<part>
+		<id>1</id>
+		<type>button</type>
+		<layer>card</layer>
+		<visible><true /></visible>
+		<enabled><true /></enabled>
+		<rect>
+			<left>30</left>
+			<top>20</top>
+			<right>134</right>
+			<bottom>52</bottom>
+		</rect>
+		<style>standard</style>
+		<showName><true /></showName>
+		<highlight><false /></highlight>
+		<autoHighlight><true /></autoHighlight>
+		<sharedHighlight><false /></sharedHighlight>
+		<family>0</family>
+		<titleWidth>0</titleWidth>
+		<icon>0</icon>
+		<dontWrap><false /></dontWrap>
+		<dontSearch><false /></dontSearch>
+		<sharedText><false /></sharedText>
+		<fixedLineHeight><false /></fixedLineHeight>
+		<autoTab><false /></autoTab>
+		<lockText><false /></lockText>
+		<autoSelect><false /></autoSelect>
+		<multipleLines><false /></multipleLines>
+		<showLines><false /></showLines>
+		<wideMargins><false /></wideMargins>
+		<currentTime>0:00:00:00.00/1</currentTime>
+		<controllerVisible><false /></controllerVisible>
+		<fillColor>
+			<red>65535</red>
+			<green>65535</green>
+			<blue>65535</blue>
+			<alpha>65535</alpha>
+		</fillColor>
+		<lineColor>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+			<alpha>65535</alpha>
+		</lineColor>
+		<shadowColor>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+			<alpha>0</alpha>
+		</shadowColor>
+		<shadowOffset>
+			<width>0</width>
+			<height>0</height>
+		</shadowOffset>
+		<shadowBlurRadius>0</shadowBlurRadius>
+		<lieWidth>0</lieWidth>
+		<textAlign>center</textAlign>
+		<font>Lucida Grande</font>
+		<textSize>13</textSize>
+		<hasHorizontalScroller><false /></hasHorizontalScroller>
+		<hasVerticalScroller><false /></hasVerticalScroller>
+		<name>New Button</name>
+		<script>on mouseUp
+	set the number of me to number of card buttons
+end mouseUp</script>
+	</part>
+	<part>
 		<id>3</id>
 		<type>button</type>
 		<layer>card</layer>
@@ -140,19 +206,19 @@ end mouseUp</script>
 end mouseUp</script>
 	</part>
 	<part>
-		<id>1</id>
-		<type>button</type>
+		<id>-1</id>
+		<type>field</type>
 		<layer>card</layer>
 		<visible><true /></visible>
 		<enabled><true /></enabled>
 		<rect>
-			<left>30</left>
-			<top>20</top>
-			<right>134</right>
-			<bottom>52</bottom>
+			<left>41</left>
+			<top>138</top>
+			<right>384</right>
+			<bottom>253</bottom>
 		</rect>
-		<style>standard</style>
-		<showName><true /></showName>
+		<style>rectangle</style>
+		<showName><false /></showName>
 		<highlight><false /></highlight>
 		<autoHighlight><true /></autoHighlight>
 		<sharedHighlight><false /></sharedHighlight>
@@ -195,16 +261,25 @@ end mouseUp</script>
 		</shadowOffset>
 		<shadowBlurRadius>0</shadowBlurRadius>
 		<lieWidth>0</lieWidth>
-		<textAlign>center</textAlign>
+		<textAlign>left</textAlign>
 		<font>Lucida Grande</font>
 		<textSize>13</textSize>
 		<hasHorizontalScroller><false /></hasHorizontalScroller>
 		<hasVerticalScroller><false /></hasVerticalScroller>
-		<name>New Button</name>
-		<script>on mouseUp
-	set the number of me to number of card buttons
-end mouseUp</script>
+		<name></name>
+		<script></script>
 	</part>
+	<content>
+		<layer>card</layer>
+		<id>-1</id>
+		<text>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+{\fonttbl\f0\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf0 Welcome!}</text>
+		<highlight><false /></highlight>
+	</content>
 	<owner>3000</owner>
 	<marked><false /></marked>
 </card>
