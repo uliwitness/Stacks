@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE card PUBLIC "-//Apple, Inc.//DTD card V 2.0//EN" "" >
+<card>
+	<id>3001</id>
+	<name></name>
+	<showPict><true /></showPict>
+	<cantDelete><false /></cantDelete>
+	<dontSearch><false /></dontSearch>
+	<script>on openCard
+	global gPlayerPosition
+	put "1,1" into gPlayerPosition
+end openCard
+
+on makeMap
+	put the number of card buttons into numBtns
+	repeat with x = numBtns down to 1
+		delete card button x
+	end repeat
+	put "0,0" into buttonName
+	put "left:0" &amp;newline&amp; "top:0" &amp;newline&amp; "bottom:32" &amp;newline&amp; "right:32" into theBox
+	repeat with y from 1 through 10
+		repeat with x from 1 through 16
+			put x &amp;"," &amp; y into buttonName
+			create button buttonName
+			set rectangle of last cd btn to theBox
+			set style of last cd btn to "rectangle"
+			set transparentColor to "red:0" &amp;newline&amp; "green:0" &amp;newline&amp; "blue:0" &amp;newline&amp; "alpha:0"
+			set lineColor of last cd btn to transparentColor
+			set fillColor of last cd btn to transparentColor
+			set showName of last cd btn to false
+			
+			add 32 to left of theBox
+			add 32 to right of theBox
+		end repeat
+		put 0 into left of theBox
+		put 32 into right of theBox
+		add 32 to top of theBox
+		add 32 to bottom of theBox
+	end repeat
+	
+	global gPlayerPosition
+	put "1,1" into gPlayerPosition
+	set icon of cd btn gPlayerPosition to 1000
+end makeMap
+
+on arrowKey theDirection
+	global gPlayerPosition
+	
+	if theDirection is "right" then
+		set icon of cd btn gPlayerPosition to 0
+		add 1 to item 1 of gPlayerPosition
+		set icon of cd btn gPlayerPosition to 1000
+	else if theDirection is "left" then
+		set icon of cd btn gPlayerPosition to 0
+		subtract 1 from item 1 of gPlayerPosition
+		set icon of cd btn gPlayerPosition to 1000
+	else if theDirection is "down" then
+		set icon of cd btn gPlayerPosition to 0
+		add 1 to item 2 of gPlayerPosition
+		set icon of cd btn gPlayerPosition to 1000
+	else if theDirection is "up" then
+		set icon of cd btn gPlayerPosition to 0
+		subtract 1 from item 2 of gPlayerPosition
+		set icon of cd btn gPlayerPosition to 1000
+	end if
+end arrowKey
+
+on showplayer
+	global gPlayerPosition
+	answer gPlayerPosition
+end showplayer</script>
+	<owner>3000</owner>
+	<marked><false /></marked>
+</card>
