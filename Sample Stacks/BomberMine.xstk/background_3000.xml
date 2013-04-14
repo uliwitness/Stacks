@@ -2,7 +2,7 @@
 <!DOCTYPE background PUBLIC "-//Apple, Inc.//DTD background V 2.0//EN" "" >
 <background>
 	<id>3000</id>
-	<name></name>
+	<name>Game Area</name>
 	<showPict><true /></showPict>
 	<cantDelete><false /></cantDelete>
 	<dontSearch><false /></dontSearch>

@@ -2,7 +2,7 @@
 <!DOCTYPE card PUBLIC "-//Apple, Inc.//DTD card V 2.0//EN" "" >
 <card>
 	<id>3001</id>
-	<name></name>
+	<name>Map Card</name>
 	<showPict><true /></showPict>
 	<cantDelete><false /></cantDelete>
 	<dontSearch><false /></dontSearch>
@@ -71,7 +71,7 @@ on showplayer
 end showplayer</script>
 	<userProperties>
 		<name>playerposition</name>
-		<value>8,3</value>
+		<value>8,5</value>
 	</userProperties>
 	<part>
 		<id>1</id>
@@ -2666,7 +2666,7 @@ end showplayer</script>
 		<sharedHighlight><false /></sharedHighlight>
 		<family>0</family>
 		<titleWidth>0</titleWidth>
-		<icon>1000</icon>
+		<icon>0</icon>
 		<dontWrap><false /></dontWrap>
 		<dontSearch><false /></dontSearch>
 		<sharedText><false /></sharedText>
@@ -4778,7 +4778,7 @@ end showplayer</script>
 		<sharedHighlight><false /></sharedHighlight>
 		<family>0</family>
 		<titleWidth>0</titleWidth>
-		<icon>0</icon>
+		<icon>1000</icon>
 		<dontWrap><false /></dontWrap>
 		<dontSearch><false /></dontSearch>
 		<sharedText><false /></sharedText>
