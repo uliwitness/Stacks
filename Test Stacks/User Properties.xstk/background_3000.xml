@@ -7,4 +7,8 @@
 	<cantDelete><false /></cantDelete>
 	<dontSearch><false /></dontSearch>
 	<script></script>
+	<userProperties>
+		<name>stackiscool</name>
+		<value>Maybe</value>
+	</userProperties>
 </background>

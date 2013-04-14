@@ -14,6 +14,10 @@
 		<height>342</height>
 	</cardSize>
 	<script></script>
+	<userProperties>
+		<name>stackiscool</name>
+		<value>Sure!</value>
+	</userProperties>
 	<background id="3000" file="background_3000.xml" />
 	<card id="3001" file="card_3001.xml" marked="false" />
 </stack>

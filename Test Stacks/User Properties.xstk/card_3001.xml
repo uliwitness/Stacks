@@ -7,6 +7,8 @@
 	<cantDelete><false /></cantDelete>
 	<dontSearch><false /></dontSearch>
 	<script></script>
+	<userProperties>
+	</userProperties>
 	<part>
 		<id>-1</id>
 		<type>button</type>
@@ -80,10 +82,10 @@
 		<visible><true /></visible>
 		<enabled><true /></enabled>
 		<rect>
-			<left>100</left>
-			<top>100</top>
-			<right>200</right>
-			<bottom>124</bottom>
+			<left>215</left>
+			<top>56</top>
+			<right>319</right>
+			<bottom>84</bottom>
 		</rect>
 		<style>standard</style>
 		<showName><true /></showName>
@@ -145,6 +147,72 @@
 			<value>Meh.</value>
 			<name>thingumy</name>
 			<value>stuff</value>
+		</userProperties>
+	</part>
+	<part>
+		<id>2</id>
+		<type>field</type>
+		<layer>card</layer>
+		<visible><true /></visible>
+		<enabled><true /></enabled>
+		<rect>
+			<left>100</left>
+			<top>100</top>
+			<right>200</right>
+			<bottom>150</bottom>
+		</rect>
+		<style>rectangle</style>
+		<showName><false /></showName>
+		<highlight><false /></highlight>
+		<autoHighlight><true /></autoHighlight>
+		<sharedHighlight><false /></sharedHighlight>
+		<family>0</family>
+		<titleWidth>0</titleWidth>
+		<icon>0</icon>
+		<dontWrap><false /></dontWrap>
+		<dontSearch><false /></dontSearch>
+		<sharedText><false /></sharedText>
+		<fixedLineHeight><false /></fixedLineHeight>
+		<autoTab><false /></autoTab>
+		<lockText><false /></lockText>
+		<autoSelect><false /></autoSelect>
+		<multipleLines><false /></multipleLines>
+		<showLines><false /></showLines>
+		<wideMargins><false /></wideMargins>
+		<currentTime>0:00:00:00.00/1</currentTime>
+		<controllerVisible><false /></controllerVisible>
+		<fillColor>
+			<red>65535</red>
+			<green>65535</green>
+			<blue>65535</blue>
+			<alpha>65535</alpha>
+		</fillColor>
+		<lineColor>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+			<alpha>65535</alpha>
+		</lineColor>
+		<shadowColor>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+			<alpha>0</alpha>
+		</shadowColor>
+		<shadowOffset>
+			<width>0</width>
+			<height>0</height>
+		</shadowOffset>
+		<shadowBlurRadius>0</shadowBlurRadius>
+		<lieWidth>0</lieWidth>
+		<textAlign>left</textAlign>
+		<font>Lucida Grande</font>
+		<textSize>13</textSize>
+		<hasHorizontalScroller><false /></hasHorizontalScroller>
+		<hasVerticalScroller><false /></hasVerticalScroller>
+		<name></name>
+		<script></script>
+		<userProperties>
 		</userProperties>
 	</part>
 	<owner>3000</owner>
