@@ -139,6 +139,10 @@
 		<userProperties>
 			<name>bubble</name>
 			<value>airy</value>
+			<name>long name</name>
+			<value></value>
+			<name>long tail</name>
+			<value>Meh.</value>
 			<name>thingumy</name>
 			<value>stuff</value>
 		</userProperties>
