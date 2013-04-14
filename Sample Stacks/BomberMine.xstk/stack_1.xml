@@ -14,6 +14,12 @@
 		<height>342</height>
 	</cardSize>
 	<script></script>
+	<userProperties>
+		<name>author</name>
+		<value>Uli the li'l rascal</value>
+		<name>thisstackiscool</name>
+		<value>of course!</value>
+	</userProperties>
 	<background id="3000" file="background_3000.xml" />
 	<card id="3001" file="card_3001.xml" marked="false" />
 </stack>

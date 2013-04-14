@@ -7,4 +7,6 @@
 	<cantDelete><false /></cantDelete>
 	<dontSearch><false /></dontSearch>
 	<script></script>
+	<userProperties>
+	</userProperties>
 </background>

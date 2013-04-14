@@ -156,10 +156,10 @@
 		<visible><true /></visible>
 		<enabled><true /></enabled>
 		<rect>
-			<left>100</left>
-			<top>100</top>
-			<right>200</right>
-			<bottom>150</bottom>
+			<left>88</left>
+			<top>94</top>
+			<right>188</right>
+			<bottom>144</bottom>
 		</rect>
 		<style>rectangle</style>
 		<showName><false /></showName>

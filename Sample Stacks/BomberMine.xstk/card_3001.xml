@@ -7,8 +7,10 @@
 	<cantDelete><false /></cantDelete>
 	<dontSearch><false /></dontSearch>
 	<script>on openCard
-	global gPlayerPosition
-	put "1,1" into gPlayerPosition
+	create property playerPosition of this card
+	if the playerPosition of this cd is empty then
+		put "1,1" into the playerPosition of this card
+	end if
 end openCard
 
 on makeMap
@@ -38,37 +40,39 @@ on makeMap
 		add 32 to bottom of theBox
 	end repeat
 	
-	global gPlayerPosition
-	put "1,1" into gPlayerPosition
-	set icon of cd btn gPlayerPosition to 1000
+	put "1,1" into the playerPosition of this card
+	set icon of cd btn (playerPosition of this card) to 1000
 end makeMap
 
 on arrowKey theDirection
-	global gPlayerPosition
-	
+	put the playerPosition of this card into thePlayerPos
 	if theDirection is "right" then
-		set icon of cd btn gPlayerPosition to 0
-		add 1 to item 1 of gPlayerPosition
-		set icon of cd btn gPlayerPosition to 1000
+		set icon of cd btn thePlayerPos to 0
+		add 1 to item 1 of thePlayerPos
+		set icon of cd btn thePlayerPos to 1000
 	else if theDirection is "left" then
-		set icon of cd btn gPlayerPosition to 0
-		subtract 1 from item 1 of gPlayerPosition
-		set icon of cd btn gPlayerPosition to 1000
+		set icon of cd btn thePlayerPos to 0
+		subtract 1 from item 1 of thePlayerPos
+		set icon of cd btn thePlayerPos to 1000
 	else if theDirection is "down" then
-		set icon of cd btn gPlayerPosition to 0
-		add 1 to item 2 of gPlayerPosition
-		set icon of cd btn gPlayerPosition to 1000
+		set icon of cd btn thePlayerPos to 0
+		add 1 to item 2 of thePlayerPos
+		set icon of cd btn thePlayerPos to 1000
 	else if theDirection is "up" then
-		set icon of cd btn gPlayerPosition to 0
-		subtract 1 from item 2 of gPlayerPosition
-		set icon of cd btn gPlayerPosition to 1000
+		set icon of cd btn thePlayerPos to 0
+		subtract 1 from item 2 of thePlayerPos
+		set icon of cd btn thePlayerPos to 1000
 	end if
+	set the playerPosition of this card to thePlayerPos
 end arrowKey
 
 on showplayer
-	global gPlayerPosition
-	answer gPlayerPosition
+	answer (the playerPosition of this card)
 end showplayer</script>
+	<userProperties>
+		<name>playerposition</name>
+		<value>8,3</value>
+	</userProperties>
 	<part>
 		<id>1</id>
 		<type>button</type>
@@ -88,7 +92,7 @@ end showplayer</script>
 		<sharedHighlight><false /></sharedHighlight>
 		<family>0</family>
 		<titleWidth>0</titleWidth>
-		<icon>1000</icon>
+		<icon>0</icon>
 		<dontWrap><false /></dontWrap>
 		<dontSearch><false /></dontSearch>
 		<sharedText><false /></sharedText>
@@ -99,7 +103,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -132,6 +136,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>1,1</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>2</id>
@@ -163,7 +169,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -196,6 +202,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>2,1</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>3</id>
@@ -227,7 +235,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -260,6 +268,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>3,1</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>4</id>
@@ -291,7 +301,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -324,6 +334,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>4,1</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>5</id>
@@ -355,7 +367,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -388,6 +400,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>5,1</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>6</id>
@@ -419,7 +433,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -452,6 +466,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>6,1</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>7</id>
@@ -483,7 +499,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -516,6 +532,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>7,1</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>8</id>
@@ -547,7 +565,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -580,6 +598,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>8,1</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>9</id>
@@ -611,7 +631,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -644,6 +664,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>9,1</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>10</id>
@@ -675,7 +697,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -708,6 +730,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>10,1</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>11</id>
@@ -739,7 +763,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -772,6 +796,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>11,1</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>12</id>
@@ -803,7 +829,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -836,6 +862,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>12,1</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>13</id>
@@ -867,7 +895,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -900,6 +928,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>13,1</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>14</id>
@@ -931,7 +961,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -964,6 +994,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>14,1</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>15</id>
@@ -995,7 +1027,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -1028,6 +1060,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>15,1</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>16</id>
@@ -1059,7 +1093,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -1092,6 +1126,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>16,1</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>17</id>
@@ -1123,7 +1159,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -1156,6 +1192,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>1,2</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>18</id>
@@ -1187,7 +1225,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -1220,6 +1258,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>2,2</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>19</id>
@@ -1251,7 +1291,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -1284,6 +1324,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>3,2</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>20</id>
@@ -1315,7 +1357,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -1348,6 +1390,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>4,2</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>21</id>
@@ -1379,7 +1423,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -1412,6 +1456,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>5,2</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>22</id>
@@ -1443,7 +1489,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -1476,6 +1522,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>6,2</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>23</id>
@@ -1507,7 +1555,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -1540,6 +1588,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>7,2</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>24</id>
@@ -1571,7 +1621,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -1604,6 +1654,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>8,2</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>25</id>
@@ -1635,7 +1687,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -1668,6 +1720,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>9,2</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>26</id>
@@ -1699,7 +1753,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -1732,6 +1786,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>10,2</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>27</id>
@@ -1763,7 +1819,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -1796,6 +1852,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>11,2</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>28</id>
@@ -1827,7 +1885,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -1860,6 +1918,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>12,2</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>29</id>
@@ -1891,7 +1951,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -1924,6 +1984,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>13,2</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>30</id>
@@ -1955,7 +2017,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -1988,6 +2050,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>14,2</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>31</id>
@@ -2019,7 +2083,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -2052,6 +2116,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>15,2</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>32</id>
@@ -2083,7 +2149,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -2116,6 +2182,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>16,2</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>33</id>
@@ -2147,7 +2215,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -2180,6 +2248,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>1,3</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>34</id>
@@ -2211,7 +2281,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -2244,6 +2314,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>2,3</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>35</id>
@@ -2275,7 +2347,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -2308,6 +2380,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>3,3</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>36</id>
@@ -2339,7 +2413,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -2372,6 +2446,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>4,3</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>37</id>
@@ -2403,7 +2479,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -2436,6 +2512,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>5,3</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>38</id>
@@ -2467,7 +2545,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -2500,6 +2578,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>6,3</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>39</id>
@@ -2531,7 +2611,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -2564,6 +2644,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>7,3</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>40</id>
@@ -2584,7 +2666,7 @@ end showplayer</script>
 		<sharedHighlight><false /></sharedHighlight>
 		<family>0</family>
 		<titleWidth>0</titleWidth>
-		<icon>0</icon>
+		<icon>1000</icon>
 		<dontWrap><false /></dontWrap>
 		<dontSearch><false /></dontSearch>
 		<sharedText><false /></sharedText>
@@ -2595,7 +2677,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -2628,6 +2710,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>8,3</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>41</id>
@@ -2659,7 +2743,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -2692,6 +2776,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>9,3</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>42</id>
@@ -2723,7 +2809,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -2756,6 +2842,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>10,3</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>43</id>
@@ -2787,7 +2875,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -2820,6 +2908,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>11,3</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>44</id>
@@ -2851,7 +2941,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -2884,6 +2974,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>12,3</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>45</id>
@@ -2915,7 +3007,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -2948,6 +3040,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>13,3</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>46</id>
@@ -2979,7 +3073,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -3012,6 +3106,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>14,3</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>47</id>
@@ -3043,7 +3139,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -3076,6 +3172,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>15,3</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>48</id>
@@ -3107,7 +3205,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -3140,6 +3238,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>16,3</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>49</id>
@@ -3171,7 +3271,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -3204,6 +3304,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>1,4</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>50</id>
@@ -3235,7 +3337,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -3268,6 +3370,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>2,4</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>51</id>
@@ -3299,7 +3403,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -3332,6 +3436,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>3,4</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>52</id>
@@ -3363,7 +3469,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -3396,6 +3502,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>4,4</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>53</id>
@@ -3427,7 +3535,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -3460,6 +3568,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>5,4</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>54</id>
@@ -3491,7 +3601,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -3524,6 +3634,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>6,4</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>55</id>
@@ -3555,7 +3667,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -3588,6 +3700,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>7,4</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>56</id>
@@ -3619,7 +3733,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -3652,6 +3766,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>8,4</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>57</id>
@@ -3683,7 +3799,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -3716,6 +3832,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>9,4</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>58</id>
@@ -3747,7 +3865,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -3780,6 +3898,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>10,4</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>59</id>
@@ -3811,7 +3931,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -3844,6 +3964,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>11,4</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>60</id>
@@ -3875,7 +3997,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -3908,6 +4030,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>12,4</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>61</id>
@@ -3939,7 +4063,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -3972,6 +4096,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>13,4</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>62</id>
@@ -4003,7 +4129,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -4036,6 +4162,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>14,4</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>63</id>
@@ -4067,7 +4195,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -4100,6 +4228,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>15,4</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>64</id>
@@ -4131,7 +4261,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -4164,6 +4294,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>16,4</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>65</id>
@@ -4195,7 +4327,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -4228,6 +4360,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>1,5</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>66</id>
@@ -4259,7 +4393,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -4292,6 +4426,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>2,5</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>67</id>
@@ -4323,7 +4459,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -4356,6 +4492,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>3,5</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>68</id>
@@ -4387,7 +4525,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -4420,6 +4558,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>4,5</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>69</id>
@@ -4451,7 +4591,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -4484,6 +4624,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>5,5</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>70</id>
@@ -4515,7 +4657,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -4548,6 +4690,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>6,5</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>71</id>
@@ -4579,7 +4723,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -4612,6 +4756,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>7,5</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>72</id>
@@ -4643,7 +4789,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -4676,6 +4822,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>8,5</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>73</id>
@@ -4707,7 +4855,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -4740,6 +4888,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>9,5</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>74</id>
@@ -4771,7 +4921,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -4804,6 +4954,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>10,5</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>75</id>
@@ -4835,7 +4987,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -4868,6 +5020,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>11,5</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>76</id>
@@ -4899,7 +5053,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -4932,6 +5086,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>12,5</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>77</id>
@@ -4963,7 +5119,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -4996,6 +5152,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>13,5</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>78</id>
@@ -5027,7 +5185,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -5060,6 +5218,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>14,5</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>79</id>
@@ -5091,7 +5251,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -5124,6 +5284,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>15,5</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>80</id>
@@ -5155,7 +5317,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -5188,6 +5350,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>16,5</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>81</id>
@@ -5219,7 +5383,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -5252,6 +5416,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>1,6</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>82</id>
@@ -5283,7 +5449,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -5316,6 +5482,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>2,6</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>83</id>
@@ -5347,7 +5515,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -5380,6 +5548,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>3,6</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>84</id>
@@ -5411,7 +5581,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -5444,6 +5614,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>4,6</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>85</id>
@@ -5475,7 +5647,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -5508,6 +5680,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>5,6</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>86</id>
@@ -5539,7 +5713,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -5572,6 +5746,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>6,6</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>87</id>
@@ -5603,7 +5779,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -5636,6 +5812,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>7,6</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>88</id>
@@ -5667,7 +5845,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -5700,6 +5878,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>8,6</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>89</id>
@@ -5731,7 +5911,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -5764,6 +5944,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>9,6</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>90</id>
@@ -5795,7 +5977,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -5828,6 +6010,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>10,6</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>91</id>
@@ -5859,7 +6043,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -5892,6 +6076,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>11,6</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>92</id>
@@ -5923,7 +6109,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -5956,6 +6142,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>12,6</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>93</id>
@@ -5987,7 +6175,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -6020,6 +6208,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>13,6</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>94</id>
@@ -6051,7 +6241,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -6084,6 +6274,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>14,6</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>95</id>
@@ -6115,7 +6307,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -6148,6 +6340,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>15,6</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>96</id>
@@ -6179,7 +6373,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -6212,6 +6406,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>16,6</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>97</id>
@@ -6243,7 +6439,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -6276,6 +6472,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>1,7</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>98</id>
@@ -6307,7 +6505,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -6340,6 +6538,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>2,7</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>99</id>
@@ -6371,7 +6571,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -6404,6 +6604,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>3,7</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>100</id>
@@ -6435,7 +6637,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -6468,6 +6670,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>4,7</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>101</id>
@@ -6499,7 +6703,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -6532,6 +6736,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>5,7</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>102</id>
@@ -6563,7 +6769,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -6596,6 +6802,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>6,7</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>103</id>
@@ -6627,7 +6835,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -6660,6 +6868,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>7,7</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>104</id>
@@ -6691,7 +6901,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -6724,6 +6934,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>8,7</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>105</id>
@@ -6755,7 +6967,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -6788,6 +7000,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>9,7</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>106</id>
@@ -6819,7 +7033,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -6852,6 +7066,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>10,7</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>107</id>
@@ -6883,7 +7099,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -6916,6 +7132,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>11,7</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>108</id>
@@ -6947,7 +7165,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -6980,6 +7198,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>12,7</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>109</id>
@@ -7011,7 +7231,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -7044,6 +7264,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>13,7</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>110</id>
@@ -7075,7 +7297,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -7108,6 +7330,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>14,7</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>111</id>
@@ -7139,7 +7363,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -7172,6 +7396,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>15,7</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>112</id>
@@ -7203,7 +7429,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -7236,6 +7462,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>16,7</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>113</id>
@@ -7267,7 +7495,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -7300,6 +7528,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>1,8</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>114</id>
@@ -7331,7 +7561,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -7364,6 +7594,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>2,8</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>115</id>
@@ -7395,7 +7627,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -7428,6 +7660,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>3,8</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>116</id>
@@ -7459,7 +7693,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -7492,6 +7726,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>4,8</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>117</id>
@@ -7523,7 +7759,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -7556,6 +7792,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>5,8</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>118</id>
@@ -7587,7 +7825,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -7620,6 +7858,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>6,8</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>119</id>
@@ -7651,7 +7891,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -7684,6 +7924,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>7,8</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>120</id>
@@ -7715,7 +7957,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -7748,6 +7990,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>8,8</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>121</id>
@@ -7779,7 +8023,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -7812,6 +8056,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>9,8</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>122</id>
@@ -7843,7 +8089,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -7876,6 +8122,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>10,8</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>123</id>
@@ -7907,7 +8155,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -7940,6 +8188,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>11,8</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>124</id>
@@ -7971,7 +8221,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -8004,6 +8254,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>12,8</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>125</id>
@@ -8035,7 +8287,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -8068,6 +8320,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>13,8</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>126</id>
@@ -8099,7 +8353,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -8132,6 +8386,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>14,8</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>127</id>
@@ -8163,7 +8419,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -8196,6 +8452,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>15,8</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>128</id>
@@ -8227,7 +8485,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -8260,6 +8518,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>16,8</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>129</id>
@@ -8291,7 +8551,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -8324,6 +8584,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>1,9</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>130</id>
@@ -8355,7 +8617,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -8388,6 +8650,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>2,9</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>131</id>
@@ -8419,7 +8683,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -8452,6 +8716,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>3,9</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>132</id>
@@ -8483,7 +8749,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -8516,6 +8782,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>4,9</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>133</id>
@@ -8547,7 +8815,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -8580,6 +8848,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>5,9</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>134</id>
@@ -8611,7 +8881,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -8644,6 +8914,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>6,9</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>135</id>
@@ -8675,7 +8947,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -8708,6 +8980,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>7,9</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>136</id>
@@ -8739,7 +9013,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -8772,6 +9046,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>8,9</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>137</id>
@@ -8803,7 +9079,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -8836,6 +9112,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>9,9</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>138</id>
@@ -8867,7 +9145,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -8900,6 +9178,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>10,9</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>139</id>
@@ -8931,7 +9211,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -8964,6 +9244,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>11,9</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>140</id>
@@ -8995,7 +9277,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -9028,6 +9310,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>12,9</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>141</id>
@@ -9059,7 +9343,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -9092,6 +9376,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>13,9</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>142</id>
@@ -9123,7 +9409,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -9156,6 +9442,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>14,9</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>143</id>
@@ -9187,7 +9475,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -9220,6 +9508,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>15,9</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>144</id>
@@ -9251,7 +9541,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -9284,6 +9574,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>16,9</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>145</id>
@@ -9315,7 +9607,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -9348,6 +9640,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>1,10</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>146</id>
@@ -9379,7 +9673,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -9412,6 +9706,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>2,10</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>147</id>
@@ -9443,7 +9739,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -9476,6 +9772,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>3,10</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>148</id>
@@ -9507,7 +9805,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -9540,6 +9838,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>4,10</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>149</id>
@@ -9571,7 +9871,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -9604,6 +9904,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>5,10</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>150</id>
@@ -9635,7 +9937,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -9668,6 +9970,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>6,10</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>151</id>
@@ -9699,7 +10003,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -9732,6 +10036,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>7,10</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>152</id>
@@ -9763,7 +10069,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -9796,6 +10102,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>8,10</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>153</id>
@@ -9827,7 +10135,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -9860,6 +10168,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>9,10</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>154</id>
@@ -9891,7 +10201,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -9924,6 +10234,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>10,10</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>155</id>
@@ -9955,7 +10267,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -9988,6 +10300,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>11,10</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>156</id>
@@ -10019,7 +10333,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -10052,6 +10366,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>12,10</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>157</id>
@@ -10083,7 +10399,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -10116,6 +10432,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>13,10</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>158</id>
@@ -10147,7 +10465,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -10180,6 +10498,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>14,10</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>159</id>
@@ -10211,7 +10531,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -10244,6 +10564,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>15,10</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<part>
 		<id>160</id>
@@ -10275,7 +10597,7 @@ end showplayer</script>
 		<multipleLines><false /></multipleLines>
 		<showLines><false /></showLines>
 		<wideMargins><false /></wideMargins>
-		<currentTime>(null)</currentTime>
+		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
 		<fillColor>
 			<red>0</red>
@@ -10308,6 +10630,8 @@ end showplayer</script>
 		<hasVerticalScroller><false /></hasVerticalScroller>
 		<name>16,10</name>
 		<script></script>
+		<userProperties>
+		</userProperties>
 	</part>
 	<owner>3000</owner>
 	<marked><false /></marked>
