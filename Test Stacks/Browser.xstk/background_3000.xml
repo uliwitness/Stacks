@@ -11,6 +11,12 @@
 	</userProperties>
 	<content>
 		<layer>card</layer>
+		<id>-1</id>
+		<text></text>
+		<highlight><false /></highlight>
+	</content>
+	<content>
+		<layer>card</layer>
 		<id>1</id>
 		<text></text>
 		<highlight><false /></highlight>

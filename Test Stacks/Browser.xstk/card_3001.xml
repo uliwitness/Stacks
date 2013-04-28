@@ -41,7 +41,7 @@
 		<wideMargins><false /></wideMargins>
 		<currentTime>0:00:00:00.00/1</currentTime>
 		<controllerVisible><false /></controllerVisible>
-		<currentURL>http://orangejuiceliberationfront.com/my-ideal-os/</currentURL>
+		<currentURL>http://www.billatkinson.com/Homepage.pl</currentURL>
 		<fillColor>
 			<red>65535</red>
 			<green>65535</green>
@@ -149,6 +149,224 @@ end loadPage</script>
 		<userProperties>
 		</userProperties>
 	</part>
+	<part>
+		<id>2</id>
+		<type>button</type>
+		<layer>card</layer>
+		<visible><true /></visible>
+		<enabled><true /></enabled>
+		<rect>
+			<left>896</left>
+			<top>676</top>
+			<right>1000</right>
+			<bottom>704</bottom>
+		</rect>
+		<style>standard</style>
+		<showName><true /></showName>
+		<highlight><false /></highlight>
+		<autoHighlight><true /></autoHighlight>
+		<sharedHighlight><false /></sharedHighlight>
+		<family>0</family>
+		<titleWidth>0</titleWidth>
+		<icon>0</icon>
+		<dontWrap><false /></dontWrap>
+		<dontSearch><false /></dontSearch>
+		<sharedText><false /></sharedText>
+		<fixedLineHeight><false /></fixedLineHeight>
+		<autoTab><false /></autoTab>
+		<lockText><false /></lockText>
+		<autoSelect><false /></autoSelect>
+		<multipleLines><false /></multipleLines>
+		<showLines><false /></showLines>
+		<wideMargins><false /></wideMargins>
+		<currentTime>(null)</currentTime>
+		<controllerVisible><false /></controllerVisible>
+		<currentURL></currentURL>
+		<fillColor>
+			<red>65535</red>
+			<green>65535</green>
+			<blue>65535</blue>
+			<alpha>65535</alpha>
+		</fillColor>
+		<lineColor>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+			<alpha>65535</alpha>
+		</lineColor>
+		<shadowColor>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+			<alpha>0</alpha>
+		</shadowColor>
+		<shadowOffset>
+			<width>0</width>
+			<height>0</height>
+		</shadowOffset>
+		<shadowBlurRadius>0</shadowBlurRadius>
+		<lieWidth>0</lieWidth>
+		<textAlign>center</textAlign>
+		<font>Lucida Grande</font>
+		<textSize>13</textSize>
+		<hasHorizontalScroller><false /></hasHorizontalScroller>
+		<hasVerticalScroller><false /></hasVerticalScroller>
+		<name>Go!</name>
+		<script>on mouseUp
+	set currentURL of cd part "New Browser" to cd fld 1
+end mouseUp</script>
+		<userProperties>
+		</userProperties>
+	</part>
+	<content>
+		<layer>card</layer>
+		<id>-1</id>
+		<text binaryEncoding="base64">PGh0bWw+CjxoZWFkPgo8dGl0bGU+QmlsbCBBdGtpbnNvbiBOYXR1cmUgUGhvdG9n
+cmFwaHk8L3RpdGxlPgo8bWV0YSBuYW1lPSJhYnN0cmFjdCIgY29udGVudD0iQW4g
+ZXh0ZW5zaXZlIGNvbGxlY3Rpb24gb2YgRmluZSBBcnQgTmF0dXJlIFBob3RvZ3Jh
+cGhzIGJ5IEJpbGwgQXRraW5zb24iPgo8bWV0YSBuYW1lPSJkZXNjcmlwdGlvbiIg
+Y29udGVudD0iRmluZSBBcnQgTmF0dXJlIFBob3RvZ3JhcGh5IGJ5IEJpbGwgQXRr
+aW5zb24sIGFuIGV4dGVuc2l2ZSBzZWFyY2hhYmxlIGdhbGxlcnkgb2YgZmluZSBh
+cnQgbmF0dXJlIHBob3RvZ3JhcGhzIGZvciBzYWxlIG9ubGluZS4iPgoKPG1ldGEg
+bmFtZT0ia2V5d29yZHMiIGNvbnRlbnQ9IkJpbGwgQXRraW5zb24sIHBob3RvZ3Jh
+cGh5IG5hdHVyZSwgbmF0dXJlIHBob3RvZ3JhcGh5IGdhbGxlcnksIGZpbmUgYXJ0
+IHBob3RvZ3JhcGh5LCBzdG9jayBwaG90b2dyYXBoeSwgbGFuZHNjYXBlIHBob3Rv
+Z3JhcGh5LCAKcGhvdG9ncmFwaHkgb2YgbmF0dXJlLCBwaG90b3Mgb2YgbmF0dXJl
+LCBuYXR1cmUgaW1hZ2VzLCBuYXR1cmVpbWFnZXMsIGltYWdlIGdhbGxlcnksIHBo
+b3RvZ3JhcGhlcnMsIGZpbmUgYXJ0IG5hdHVyZSBwaG90b2dyYXBoeSwgbmF0dXJl
+IHBob3RvZ3JhcGhzLCBuYXR1cmUgcGhvdG9zLCBQaG90b0NhcmQsCmZpbmUgYXJ0
+IHByaW50cywgZ2FsbGVyeSBwaG90b2dyYXBoeSBuYXR1cmUsIHBob3RvZ3JhcGh5
+IHdvcmtzaG9wcywgZGlnaXRhbCBwcmludGluZyB3b3Jrc2hvcHMsIGNvbG9yIG1h
+bmFnZW1lbnQsIHBpY3R1cmVzLCBwaG90b2dyYXBocywgaW1hZ2VzLCBwaG90byBw
+cmludHMsIApwb3J0Zm9saW8sIHBpY3R1cmUgZ2FsbGVyeSwgYWJzdHJhY3QgcGhv
+dG9ncmFwaHksIHNhbGUgb25saW5lLCBCJlcsIGNvbG9yLCBnYWxsZXJ5LCBleGhp
+Yml0aW9uLCBmaW5lIGFydCwgYWJzdHJhY3QsIGNsb3NldXAsIHNjZW5pYywgbGFu
+ZHNjYXBlcywgb3V0ZG9vcnMsIHN0dWRpbywgCndpbnRlciwgc3ByaW5nLCBzdW1t
+ZXIsIGF1dHVtbiwgZmFsbCwgd2lsZGVybmVzcywgQ29sb3JhZG8sIFNvdXRod2Vz
+dCwgQXJpem9uYSwgVXRhaCwgUm9ja3MsIFBhY2lmaWMgTm9ydGh3ZXN0LCBXYXNo
+aW5ndG9uLCBPcmVnb24sIEZsb3dlciBQb3J0cmFpdHMsIGZsb3dlciBjbG9zZS11
+cHMsIApmbG9yYWwsIE5ldyBFbmdsYW5kLCBTbW9reSBNb3VudGFpbnMsIEtlbnR1
+Y2t5LCBDYWxpZm9ybmlhLCBEZWF0aCBWYWxsZXksIEhhd2FpaSwgYWJhbG9uZSwg
+YXNwZW4sIGJlYWNoLCBibG9zc29tcywgY2FueW9uLCBjbG91ZHMsIGNvYXN0LCBk
+ZXNlcnQsIGRvZ3dvb2QsIGR1bmVzLCBmZXJucywgCmZsb3dlcnMsIGZvZywgZm9s
+aWFnZSwgZm9yZXN0LCBncmFwZXMsIGdyYXNzLCBsZWFmLCBsZWF2ZXMsIGxpbHks
+IG1pc3QsIG1vc3MsIG11ZCwgb2NlYW4sIG9yY2hpZCwgcGV0cmlmaWVkIHdvb2Qs
+IHBvcHB5LCByYWluZm9yZXN0LCByaXZlciwgcm9jaywgcm9zZSwgcm9zZXMsIHNh
+bmQsIApzYW5kc3RvbmUsIHNlYSBzdGFjaywgc2hlbGwsIHNreSwgc2xvdCBjYW55
+b24sIHNub3csIHN0cmVhbSwgc3VucmlzZSwgc3Vuc2V0LCB0cmVlcywgdHVsaXAs
+IHdhdGVyLCB3YXRlcmZhbGwsIHdhdmVzLCB3aWxkZmxvd2VycywgZ2lmdHMsIGhv
+bGlkYXkgZ2lmdHMsIGFubml2ZXJzYXJ5LCBiaXJ0aGRheSwgZ3JhZHVhdGlvbiwg
+aVBob25lLCBpUG9kIHRvdWNoLCBwb3N0Y2FyZHMsIHBvc3QgY2FyZHMsIHBob3Rv
+IGNhcmRzLCBlY2FyZHMsIGJlc3QgaVBob25lIGFwcCI+Cgo8bWV0YSBodHRwLWVx
+dWl2PQJrZXl3b3JkcwIgbmFtZT0Ca2V5d29yZHMCIENPTlRFTlQ9K2lsbCBBdGtp
+bnNvbiwgcGhvdG9ncmFwaHkgbmF0dXJlLCBuYXR1cmUgcGhvdG9ncmFwaHkgZ2Fs
+bGVyeSwgZmluZSBhcnQgcGhvdG9ncmFwaHksIHN0b2NrIHBob3RvZ3JhcGh5LCBs
+YW5kc2NhcGUgcGhvdG9ncmFwaHksIApwaG90b2dyYXBoeSBvZiBuYXR1cmUsIHBo
+b3RvcyBvZiBuYXR1cmUsIG5hdHVyZSBpbWFnZXMsIG5hdHVyZWltYWdlcywgaW1h
+Z2UgZ2FsbGVyeSwgcGhvdG9ncmFwaGVycywgZmluZSBhcnQgbmF0dXJlIHBob3Rv
+Z3JhcGh5LCBuYXR1cmUgcGhvdG9ncmFwaHMsIG5hdHVyZSBwaG90b3MsIFBob3Rv
+Q2FyZCwKZmluZSBhcnQgcHJpbnRzLCBnYWxsZXJ5IHBob3RvZ3JhcGh5IG5hdHVy
+ZSwgcGhvdG9ncmFwaHkgd29ya3Nob3BzLCBkaWdpdGFsIHByaW50aW5nIHdvcmtz
+aG9wcywgY29sb3IgbWFuYWdlbWVudCwgcGljdHVyZXMsIHBob3RvZ3JhcGhzLCBp
+bWFnZXMsIHBob3RvIHByaW50cywgCnBvcnRmb2xpbywgcGljdHVyZSBnYWxsZXJ5
+LCBhYnN0cmFjdCBwaG90b2dyYXBoeSwgc2FsZSBvbmxpbmUsIEImVywgY29sb3Is
+IGdhbGxlcnksIGV4aGliaXRpb24sIGZpbmUgYXJ0LCBhYnN0cmFjdCwgY2xvc2V1
+cCwgc2NlbmljLCBsYW5kc2NhcGVzLCBvdXRkb29ycywgc3R1ZGlvLCAKd2ludGVy
+LCBzcHJpbmcsIHN1bW1lciwgYXV0dW1uLCBmYWxsLCB3aWxkZXJuZXNzLCBDb2xv
+cmFkbywgU291dGh3ZXN0LCBBcml6b25hLCBVdGFoLCBSb2NrcywgUGFjaWZpYyBO
+b3J0aHdlc3QsIFdhc2hpbmd0b24sIE9yZWdvbiwgRmxvd2VyIFBvcnRyYWl0cywg
+Zmxvd2VyIGNsb3NlLXVwcywgCmZsb3JhbCwgTmV3IEVuZ2xhbmQsIFNtb2t5IE1v
+dW50YWlucywgS2VudHVja3ksIENhbGlmb3JuaWEsIERlYXRoIFZhbGxleSwgSGF3
+YWlpLCBhYmFsb25lLCBhc3BlbiwgYmVhY2gsIGJsb3Nzb21zLCBjYW55b24sIGNs
+b3VkcywgY29hc3QsIGRlc2VydCwgZG9nd29vZCwgZHVuZXMsIGZlcm5zLCAKZmxv
+d2VycywgZm9nLCBmb2xpYWdlLCBmb3Jlc3QsIGdyYXBlcywgZ3Jhc3MsIGxlYWYs
+IGxlYXZlcywgbGlseSwgbWlzdCwgbW9zcywgbXVkLCBvY2Vhbiwgb3JjaGlkLCBw
+ZXRyaWZpZWQgd29vZCwgcG9wcHksIHJhaW5mb3Jlc3QsIHJpdmVyLCByb2NrLCBy
+b3NlLCByb3Nlcywgc2FuZCwgCnNhbmRzdG9uZSwgc2VhIHN0YWNrLCBzaGVsbCwg
+c2t5LCBzbG90IGNhbnlvbiwgc25vdywgc3RyZWFtLCBzdW5yaXNlLCBzdW5zZXQs
+IHRyZWVzLCB0dWxpcCwgd2F0ZXIsIHdhdGVyZmFsbCwgd2F2ZXMsIHdpbGRmbG93
+ZXJzLCBnaWZ0cywgaG9saWRheSBnaWZ0cywgYW5uaXZlcnNhcnksIGJpcnRoZGF5
+LCBncmFkdWF0aW9uLCBpUGhvbmUsIGlQb2QgdG91Y2gsIHBvc3RjYXJkcywgcG9z
+dCBjYXJkcywgcGhvdG8gY2FyZHMsIGVjYXJkcywgYmVzdCBpUGhvbmUgYXBwIj4K
+CjxtZXRhIG5hbWU9InJlc291cmNlLXR5cGUiIGNvbnRlbnQ9IkZpbmUgQXJ0IFBo
+b3RvZ3JhcGh5LCBOYXR1cmUgUGhvdG9ncmFwaHksIE5hdHVyZSBQaG90b3MsIFBo
+b3RvZ3JhcGh5LCBQaG90b3MsIEltYWdlcywgUHJpbnRzLCBOYXR1cmUgSW1hZ2Vz
+LiI+CjxtZXRhIG5hbWU9IkNsYXNzaWZpY2F0aW9uIiBjb250ZW50PSJOYXR1cmUg
+UGhvdG9ncmFwaHksIExhbmRzY2FwZSBQaG90b2dyYXBoeSwgRmluZSBBcnQsIEZp
+bmUgQXJ0IFBob3RvZ3JhcGh5LiI+CjxtZXRhIG5hbWU9IkF1dGhvciIgY29udGVu
+dD0iU2lvdXggQXRraW5zb24gYW5kIEJpbGwgQXRraW5zb24iPgo8bWV0YSBuYW1l
+PSJhdXRob3IvcGhvdG9ncmFwaGVyIiBjb250ZW50PSJCaWxsIEF0a2luc29uIj4K
+PG1ldGEgbmFtZT0iY29weXJpZ2h0IiBjb250ZW50PSJGaW5lIEFydCBOYXR1cmUg
+UGhvdG9ncmFwaHkgQ29weXJpZ2h0IDIwMDkgQmlsbCBBdGtpbnNvbiBBbGwgUmln
+aHRzIFJlc2VydmVkIj4KPG1ldGEgbmFtZT0icm9ib3RzIiBjb250ZW50PSJpbmRl
+eCxmb2xsb3ciPgo8bWV0YSBuYW1lPSJhdWRpZW5jZSIgY29udGVudD0iQWxsIj4K
+PG1ldGEgbmFtZT0icmF0aW5nIiBjb250ZW50PSJnZW5lcmFsIj4KPG1ldGEgbmFt
+ZT0iZGlzdHJpYnV0aW9uIiBjb250ZW50PSJHbG9iYWwiPgo8bWV0YSBodHRwLWVx
+dWl2PSJDb250ZW50LVR5cGUiIGNvbnRlbnQ9InRleHQvaHRtbDsgY2hhcnNldD1p
+c28tODg1OS0xIj4KPG1ldGEgSFRUUC1FUVVJVj0iQ29udGVudC1MYW5ndWFnZSIg
+Y29udGVudD0iRU4iPgo8bWV0YSBuYW1lPSJyZXZpc2l0LWFmdGVyIiBjb250ZW50
+PSIxNSBkYXlzIj4KCjwhRmluZSBBcnQgTmF0dXJlIFBob3RvZ3JhcGh5IGJ5IEJp
+bGwgQXRraW5zb24sIGFuIGV4dGVuc2l2ZSBzZWFyY2hhYmxlIGdhbGxlcnkgb2Yg
+ZmluZSBhcnQgbmF0dXJlIHBob3RvZ3JhcGhzIGZvciBzYWxlIG9ubGluZS4hPgoK
+PGJhc2UgSFJFRj0iaHR0cDovL3d3dy5iaWxsYXRraW5zb24uY29tLyI+CjxMSU5L
+IEhSRUY9IlN0eWxlc0lFLmNzcyIgUkVMPSJzdHlsZVNoZWV0IiBUWVBFPSJ0ZXh0
+L2NzcyI+Cgo8L2hlYWQ+Cgo8Qk9EWSBUT1BNQVJHSU49MCBMRUZUTUFSR0lOPTAg
+TUFSR0lOV0lEVEg9MCBNQVJHSU5IRUlHSFQ9MD4KPFRBQkxFIEJPUkRFUj0wIENF
+TExTUEFDSU5HPTAgQ0VMTFBBRERJTkc9MCBXSURUSD0xMDAlPgo8VFI+PFREIFdJ
+RFRIPTIwPiAmbmJzcDsgPC9URD4KPFREIEFMSUdOPSJDRU5URVIiIFdJRFRIPTcw
+MD4KPERJViBJRD0iYmFubmVySUQiIEFMSUdOPSJDRU5URVIiPgo8SU1HIFNSQz0i
+VXNlckludGVyZmFjZS9CQVBsb2dvLmdpZiIgV0lEVEg9NzAwIEhFSUdIVD01NSBC
+T1JERVI9MD48QlI+CjxNQVAgTkFNRT0ibGlua2Jhcl9NYXAiPgo8QVJFQSBTSEFQ
+RT0icmVjdCIgQ09PUkRTPSIzMCwwLDEwNSwyNSIgIEhSRUY9IkhvbWVwYWdlLnBs
+Ij4KPEFSRUEgU0hBUEU9InJlY3QiIENPT1JEUz0iMTA1LDAsMTc1LDI1IiBIUkVG
+PSJQcmVmZXJlbmNlcy5wbCI+CjxBUkVBIFNIQVBFPSJyZWN0IiBDT09SRFM9IjE3
+NSwwLDI2NSwyNSIgSFJFRj0iQ2F0YWxvZ0luZGV4Lmh0bWwiPgo8QVJFQSBTSEFQ
+RT0icmVjdCIgQ09PUkRTPSIyNjUsMCwzNDAsMjUiIEhSRUY9IlByaWNlTGlzdC5w
+bCI+CjxBUkVBIFNIQVBFPSJyZWN0IiBDT09SRFM9IjM0MCwwLDQ1NSwyNSIgSFJF
+Rj0iU3BlY2lhbE9mZmVycy5odG1sIj4KPEFSRUEgU0hBUEU9InJlY3QiIENPT1JE
+Uz0iNDU1LDAsNTc1LDI1IiBIUkVGPSJSZXZpZXdPcmRlci5wbCI+CjxBUkVBIFNI
+QVBFPSJyZWN0IiBDT09SRFM9IjU3NSwwLDY3MCwyNSIgSFJFRj0iQWJvdXRJbmRl
+eC5odG1sIj4KPC9NQVA+CjxBIEhSRUY9IkJBUGxpbmtiYXIubWFwIj4KPElNRyBT
+UkM9IlVzZXJJbnRlcmZhY2UvQkFQbGlua2Jhci5naWYiIFdJRFRIPTcwMCBIRUlH
+SFQ9MjUgQk9SREVSPTAgVVNFTUFQPSIjbGlua2Jhcl9NYXAiIElTTUFQPgo8L0E+
+CjwvRElWPgo8RElWIElEPSJjb250ZW50SUQiPgo8TUFQIE5BTUU9ImhvbWVwaG90
+b19NYXAiPgo8QVJFQSBTSEFQRT0icmVjdCIgQ09PUkRTPSIwLDAsMjc2LDM0OCIg
+IEhSRUY9IkNhdGFsb2dJbmRleC5odG1sIj4KPEFSRUEgU0hBUEU9InJlY3QiIENP
+T1JEUz0iMjc2LDAsMzk4LDM0OCIgSFJFRj0iU3BlY2lhbE9mZmVycy5odG1sIj4K
+PEFSRUEgU0hBUEU9InJlY3QiIENPT1JEUz0iMzk4LDAsNjcwLDM0OCIgSFJFRj0i
+Q2F0YWxvZ0luZGV4Lmh0bWwiPgo8L01BUD4KPFRBQkxFIEJPUkRFUj0wIFdJRFRI
+PTcwMD4KPFRSPjxQPjxURCBIRUlHSFQ9MzQ4IFdJRFRIPTE1PiAmbmJzcDsgPC9U
+RD4KPFREIEhFSUdIVD0zNDggV0lEVEg9NjcwIEFMSUdOPUNFTlRFUiBWQUxJR049
+VE9QPgo8QSBIUkVGPSJCQVBob21lcGhvdG8ubWFwIj4KPElNRyBTUkM9IkhvbWVQ
+aG90by5qcGciIFdJRFRIPTY3MCBIRUlHSFQ9MzQ4IEFMVD0iUGhvdG9ncmFwaCIg
+Qk9SREVSPTAgVVNFTUFQPSIjaG9tZXBob3RvX01hcCIgSVNNQVA+PC9BPgo8QlI+
+PEJSPlZpZXcgPEI+PEEgSFJFRj0iQ2F0YWxvZ0luZGV4Lmh0bWwiPjg4MiBvcmln
+aW5hbCBjb2xvciBwaG90b2dyYXBoczwvQT48L0I+IHRoYXQgY2VsZWJyYXRlIHRo
+ZSBiZWF1dHkgb2YgbmF0dXJlLjxCUj4KUmVhZCBhYm91dCBvdXIgZmluZS1hcnQg
+cHJpbnRzLCBhdmFpbGFibGUgb24gYm90aCA8Qj48QSBIUkVGPSJhYm91dFRoZVBy
+aW50cy5odG1sIj5jYW52YXMgCmFuZCBwaG90byBwYXBlcjwvQT48L0I+LDxCUj5h
+bmQgb3VyIGFydCBib29rLCA8QSBIUkVGPSJTcGVjaWFsT2ZmZXJzLmh0bWwiPjxC
+PiYjMTQ3O1dpdGhpbiB0aGUgU3RvbmUuJiMxNDg7PC9BPjwvQj4KPEJSPjxCUj5D
+bGljayB0byBsZWFybiBhYm91dCA8QSBIUkVGPSJhYm91dFBob3RvQ2FyZC5odG1s
+Ij48Qj4mIzE0NztCaWxsIEF0a2luc29uIFBob3RvQ2FyZCwmIzE0ODs8L0E+PC9C
+PiBhdmFpbGFibGUgZnJvbSB0aGUgaVR1bmVzIEFwcCBzdG9yZS48QlI+Ckl0IGlz
+IGEgVW5pdmVyc2FsIEFwcCBvcHRpbWl6ZWQgZm9yIHVzZSB3aXRoIHRoZSBpUGFk
+LCBpUGhvbmUsIGFuZCBpUG9kIHRvdWNoLgo8QlI+QWxzbyBzZWUgb3VyIDxBIEhS
+RUY9InBob3RvQ2FyZEZBUS5odG1sIj48Qj4mIzE0NztGcmVxdWVudGx5IEFza2Vk
+IFF1ZXN0aW9ucyYjMTQ4OzwvQT48L0I+IHBhZ2UgZm9yIHRyb3VibGVzaG9vdGlu
+Zy4KPEJSPjxCUj48QSBIUkVGPSJhYm91dFBob3RvQ2FyZC5odG1sIj48SU1HIFNS
+Qz0iVXNlckludGVyZmFjZS9QaG90b0NhcmRGb3JIb21lcGFnZS5wbmciIFdJRFRI
+PTE0NCBIRUlHSFQ9MTQ3IEJPUkRFUj0wPjwvQT4KPEJSPjxCUj48ST48QSBIUkVG
+PSJjb3B5cmlnaHROb3RpY2UuaHRtbCI+QWxsIHBob3RvZ3JhcGhpYyBpbWFnZXMg
+aW4gdGhpcyB3ZWJzaXRlIGFyZSBjb3B5cmlnaHQgQmlsbCBBdGtpbnNvbiBQaG90
+b2dyYXBoeS48L0E+PC9JPgo8QlI+PEk+aVBhZCwgaVBob25lIGFuZCBpUG9kIHRv
+dWNoIGFyZSB0cmFkZW1hcmtzIG9mIEFwcGxlIEluYy4sIHJlZ2lzdGVyZWQgaW4g
+dGhlIFUuUy4gYW5kIG90aGVyIGNvdW50cmllcy48L0k+CjwvVEQ+CjxURCBIRUlH
+SFQ9MzQ4IFdJRFRIPTE1PiAmbmJzcDsgPC9URD4KPC9QPjwvVFI+CjwvVEFCTEU+
+CjwvRElWPgo8L1REPjxURCBXSURUSD0yMD4gJm5ic3A7IDwvVEQ+CjwvVFI+PC9U
+QUJMRT4KPC9CT0RZPjwvSFRNTD4K</text>
+		<highlight><false /></highlight>
+	</content>
 	<content>
 		<layer>card</layer>
 		<id>1</id>
@@ -157,7 +375,7 @@ end loadPage</script>
 {\colortbl;\red255\green255\blue255;}
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
-\f0\fs26 \cf0 http://www.zathras.de/angelweb/articles.htm}</text>
+\f0\fs26 \cf0 http://www.billatkinson.com/Homepage.pl}</text>
 		<highlight><false /></highlight>
 	</content>
 	<owner>3000</owner>
