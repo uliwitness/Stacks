@@ -9,4 +9,10 @@
 	<script></script>
 	<userProperties>
 	</userProperties>
+	<content>
+		<layer>card</layer>
+		<id>2</id>
+		<text></text>
+		<highlight><false /></highlight>
+	</content>
 </background>
