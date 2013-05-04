@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE card PUBLIC "-//Apple, Inc.//DTD card V 2.0//EN" "" >
+<card>
+	<id>3002</id>
+	<name></name>
+	<showPict><true /></showPict>
+	<cantDelete><false /></cantDelete>
+	<dontSearch><false /></dontSearch>
+	<script></script>
+	<userProperties>
+	</userProperties>
+	<part>
+		<id>1</id>
+		<type>field</type>
+		<layer>card</layer>
+		<visible><true /></visible>
+		<enabled><true /></enabled>
+		<rect>
+			<left>29</left>
+			<top>262</top>
+			<right>129</right>
+			<bottom>312</bottom>
+		</rect>
+		<style>rectangle</style>
+		<showName><false /></showName>
+		<highlight><false /></highlight>
+		<autoHighlight><true /></autoHighlight>
+		<sharedHighlight><false /></sharedHighlight>
+		<family>0</family>
+		<titleWidth>0</titleWidth>
+		<icon>0</icon>
+		<dontWrap><false /></dontWrap>
+		<dontSearch><false /></dontSearch>
+		<sharedText><false /></sharedText>
+		<fixedLineHeight><false /></fixedLineHeight>
+		<autoTab><false /></autoTab>
+		<lockText><false /></lockText>
+		<autoSelect><false /></autoSelect>
+		<multipleLines><false /></multipleLines>
+		<showLines><false /></showLines>
+		<wideMargins><false /></wideMargins>
+		<currentTime>0:00:00:00.00/1</currentTime>
+		<controllerVisible><false /></controllerVisible>
+		<currentURL></currentURL>
+		<fillColor>
+			<red>65535</red>
+			<green>65535</green>
+			<blue>65535</blue>
+			<alpha>65535</alpha>
+		</fillColor>
+		<lineColor>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+			<alpha>65535</alpha>
+		</lineColor>
+		<shadowColor>
+			<red>0</red>
+			<green>0</green>
+			<blue>0</blue>
+			<alpha>0</alpha>
+		</shadowColor>
+		<shadowOffset>
+			<width>0</width>
+			<height>0</height>
+		</shadowOffset>
+		<shadowBlurRadius>0</shadowBlurRadius>
+		<lineWidth>0</lineWidth>
+		<bevelWidth>0</bevelWidth>
+		<bevelAngle>0</bevelAngle>
+		<interval>-1</interval>
+		<message>(null)</message>
+		<textAlign>left</textAlign>
+		<font>Lucida Grande</font>
+		<textSize>13</textSize>
+		<hasHorizontalScroller><false /></hasHorizontalScroller>
+		<hasVerticalScroller><false /></hasVerticalScroller>
+		<name>Second Card's Field</name>
+		<script></script>
+		<userProperties>
+		</userProperties>
+	</part>
+	<content>
+		<layer>card</layer>
+		<id>1</id>
+		<text>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
+{\fonttbl\f0\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs26 \cf0 foo}</text>
+		<highlight><false /></highlight>
+	</content>
+	<owner>3000</owner>
+	<marked><false /></marked>
+</card>
