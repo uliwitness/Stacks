@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE stackfile PUBLIC "-//Apple, Inc.//DTD stackfile V 2.0//EN" "" >
+<stackfile>
+	<stack id="1" file="stack_1.xml" />
+	<createdByVersion>Stacksmith 1.0a7 (580)</createdByVersion>
+	<lastCompactedVersion>Stacksmith 1.0a7 (580)</lastCompactedVersion>
+	<lastEditedVersion>Stacksmith 1.0a7 (580)</lastEditedVersion>
+	<firstEditedVersion>Stacksmith 1.0a7 (580)</firstEditedVersion>
+</stackfile>
