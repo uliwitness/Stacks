@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE stack PUBLIC "-//Apple, Inc.//DTD stack V 2.0//EN" "">
+<stack>
+    <id>623168672883076813</id>
+    <name>TableViewTest</name>
+    <style>standard</style>
+    <cardCount>2</cardCount>
+    <cantModify><false/></cantModify>
+    <cantDelete><false/></cantDelete>
+    <cantAbort><false/></cantAbort>
+    <cardSize>
+        <width>640</width>
+        <height>342</height>
+    </cardSize>
+    <script></script>
+    <background id="1112344475840500876" file="background_1112344475840500876.xml" name=""/>
+    <card id="3000" file="card_3000.xml" name=""/>
+</stack>
