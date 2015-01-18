@@ -1,20 +1,19 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<!DOCTYPE stack PUBLIC "-//Apple, Inc.//DTD stack V 2.0//EN" "" >
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE stack PUBLIC "-//Apple, Inc.//DTD stack V 2.0//EN" "">
 <stack>
-	<id>1</id>
-	<name>Untitled</name>
-	<userLevel>5</userLevel>
-	<cantModify><false /></cantModify>
-	<cantDelete><false /></cantDelete>
-	<privateAccess><false /></privateAccess>
-	<cantAbort><false /></cantAbort>
-	<cantPeek><false /></cantPeek>
-	<cardSize>
-		<width>512</width>
-		<height>342</height>
-	</cardSize>
-	<script></script>
-	<background id="3000" file="background_3000.xml" />
-	<card id="3001" file="card_3001.xml" marked="false" />
-	<card id="3002" file="card_3002.xml" marked="false" />
+    <id>1</id>
+    <name>Untitled</name>
+    <style>standard</style>
+    <cardCount>2</cardCount>
+    <cantModify><false/></cantModify>
+    <cantDelete><false/></cantDelete>
+    <cantAbort><false/></cantAbort>
+    <cardSize>
+        <width>512</width>
+        <height>342</height>
+    </cardSize>
+    <script></script>
+    <background id="3000" file="background_3000.xml" name=""/>
+    <card id="3001" file="card_3001.xml" name="" owner="3000"/>
+    <card id="3002" file="card_3002.xml" name="" owner="3000"/>
 </stack>

@@ -1,285 +1,240 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<!DOCTYPE card PUBLIC "-//Apple, Inc.//DTD card V 2.0//EN" "" >
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE card PUBLIC "-//Apple, Inc.//DTD card V 2.0//EN" "">
 <card>
-	<id>3001</id>
-	<name></name>
-	<showPict><true /></showPict>
-	<cantDelete><false /></cantDelete>
-	<dontSearch><false /></dontSearch>
-	<script></script>
-	<part>
-		<id>1</id>
-		<type>button</type>
-		<layer>card</layer>
-		<visible><true /></visible>
-		<enabled><true /></enabled>
-		<rect>
-			<left>30</left>
-			<top>20</top>
-			<right>134</right>
-			<bottom>52</bottom>
-		</rect>
-		<style>standard</style>
-		<showName><true /></showName>
-		<highlight><false /></highlight>
-		<autoHighlight><true /></autoHighlight>
-		<sharedHighlight><false /></sharedHighlight>
-		<family>0</family>
-		<titleWidth>0</titleWidth>
-		<icon>0</icon>
-		<dontWrap><false /></dontWrap>
-		<dontSearch><false /></dontSearch>
-		<sharedText><false /></sharedText>
-		<fixedLineHeight><false /></fixedLineHeight>
-		<autoTab><false /></autoTab>
-		<lockText><false /></lockText>
-		<autoSelect><false /></autoSelect>
-		<multipleLines><false /></multipleLines>
-		<showLines><false /></showLines>
-		<wideMargins><false /></wideMargins>
-		<currentTime>0:00:00:00.00/1</currentTime>
-		<controllerVisible><false /></controllerVisible>
-		<fillColor>
-			<red>65535</red>
-			<green>65535</green>
-			<blue>65535</blue>
-			<alpha>65535</alpha>
-		</fillColor>
-		<lineColor>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-			<alpha>65535</alpha>
-		</lineColor>
-		<shadowColor>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-			<alpha>0</alpha>
-		</shadowColor>
-		<shadowOffset>
-			<width>0</width>
-			<height>0</height>
-		</shadowOffset>
-		<shadowBlurRadius>0</shadowBlurRadius>
-		<lieWidth>0</lieWidth>
-		<textAlign>center</textAlign>
-		<font>Lucida Grande</font>
-		<textSize>13</textSize>
-		<hasHorizontalScroller><false /></hasHorizontalScroller>
-		<hasVerticalScroller><false /></hasVerticalScroller>
-		<name>New Button</name>
-		<script>on mouseUp
+    <id>3001</id>
+    <bitmap></bitmap>
+    <cantDelete><false/></cantDelete>
+    <showPict><true/></showPict>
+    <dontSearch><false/></dontSearch>
+    <owner>3000</owner>
+    <link rel="stylesheet" type="text/css" href="stylesheet_card_3001.css"/>
+    <part>
+        <id>1</id>
+        <type>button</type>
+        <rect>
+            <left>30</left>
+            <top>20</top>
+            <right>134</right>
+            <bottom>52</bottom>
+        </rect>
+        <visible><true/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>65535</red>
+            <green>65535</green>
+            <blue>65535</blue>
+            <alpha>65535</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>1</lineWidth>
+        <bevelWidth>1</bevelWidth>
+        <bevelAngle>315</bevelAngle>
+        <toolTip></toolTip>
+        <style>standard</style>
+        <showName><true/></showName>
+        <autoHighlight><true/></autoHighlight>
+        <sharedHighlight><false/></sharedHighlight>
+        <family>0</family>
+        <titleWidth>0</titleWidth>
+        <icon>0</icon>
+        <textAlign>center</textAlign>
+        <font>Lucida Grande</font>
+        <textSize>13</textSize>
+        <textStyle>plain</textStyle>
+        <name>New Button</name>
+        <script>on mouseUp
 	set the number of me to number of card buttons
 end mouseUp</script>
-	</part>
-	<part>
-		<id>3</id>
-		<type>button</type>
-		<layer>card</layer>
-		<visible><true /></visible>
-		<enabled><true /></enabled>
-		<rect>
-			<left>60</left>
-			<top>52</top>
-			<right>172</right>
-			<bottom>92</bottom>
-		</rect>
-		<style>standard</style>
-		<showName><true /></showName>
-		<highlight><false /></highlight>
-		<autoHighlight><true /></autoHighlight>
-		<sharedHighlight><false /></sharedHighlight>
-		<family>0</family>
-		<titleWidth>0</titleWidth>
-		<icon>0</icon>
-		<dontWrap><false /></dontWrap>
-		<dontSearch><false /></dontSearch>
-		<sharedText><false /></sharedText>
-		<fixedLineHeight><false /></fixedLineHeight>
-		<autoTab><false /></autoTab>
-		<lockText><false /></lockText>
-		<autoSelect><false /></autoSelect>
-		<multipleLines><false /></multipleLines>
-		<showLines><false /></showLines>
-		<wideMargins><false /></wideMargins>
-		<currentTime>0:00:00:00.00/1</currentTime>
-		<controllerVisible><false /></controllerVisible>
-		<fillColor>
-			<red>65535</red>
-			<green>65535</green>
-			<blue>65535</blue>
-			<alpha>65535</alpha>
-		</fillColor>
-		<lineColor>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-			<alpha>65535</alpha>
-		</lineColor>
-		<shadowColor>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-			<alpha>0</alpha>
-		</shadowColor>
-		<shadowOffset>
-			<width>0</width>
-			<height>0</height>
-		</shadowOffset>
-		<shadowBlurRadius>0</shadowBlurRadius>
-		<lieWidth>0</lieWidth>
-		<textAlign>center</textAlign>
-		<font>Lucida Grande</font>
-		<textSize>13</textSize>
-		<hasHorizontalScroller><false /></hasHorizontalScroller>
-		<hasVerticalScroller><false /></hasVerticalScroller>
-		<name>New Button</name>
-		<script>on mouseUp
+    </part>
+    <part>
+        <id>2</id>
+        <type>button</type>
+        <rect>
+            <left>44</left>
+            <top>34</top>
+            <right>152</right>
+            <bottom>70</bottom>
+        </rect>
+        <visible><true/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>65535</red>
+            <green>65535</green>
+            <blue>65535</blue>
+            <alpha>65535</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>1</lineWidth>
+        <bevelWidth>1</bevelWidth>
+        <bevelAngle>315</bevelAngle>
+        <toolTip></toolTip>
+        <style>standard</style>
+        <showName><true/></showName>
+        <autoHighlight><true/></autoHighlight>
+        <sharedHighlight><false/></sharedHighlight>
+        <family>0</family>
+        <titleWidth>0</titleWidth>
+        <icon>0</icon>
+        <textAlign>center</textAlign>
+        <font>Lucida Grande</font>
+        <textSize>13</textSize>
+        <textStyle>plain</textStyle>
+        <name>New Button</name>
+        <script>on mouseUp
 	set the number of me to number of card buttons
 end mouseUp</script>
-	</part>
-	<part>
-		<id>2</id>
-		<type>button</type>
-		<layer>card</layer>
-		<visible><true /></visible>
-		<enabled><true /></enabled>
-		<rect>
-			<left>44</left>
-			<top>34</top>
-			<right>152</right>
-			<bottom>70</bottom>
-		</rect>
-		<style>standard</style>
-		<showName><true /></showName>
-		<highlight><false /></highlight>
-		<autoHighlight><true /></autoHighlight>
-		<sharedHighlight><false /></sharedHighlight>
-		<family>0</family>
-		<titleWidth>0</titleWidth>
-		<icon>0</icon>
-		<dontWrap><false /></dontWrap>
-		<dontSearch><false /></dontSearch>
-		<sharedText><false /></sharedText>
-		<fixedLineHeight><false /></fixedLineHeight>
-		<autoTab><false /></autoTab>
-		<lockText><false /></lockText>
-		<autoSelect><false /></autoSelect>
-		<multipleLines><false /></multipleLines>
-		<showLines><false /></showLines>
-		<wideMargins><false /></wideMargins>
-		<currentTime>0:00:00:00.00/1</currentTime>
-		<controllerVisible><false /></controllerVisible>
-		<fillColor>
-			<red>65535</red>
-			<green>65535</green>
-			<blue>65535</blue>
-			<alpha>65535</alpha>
-		</fillColor>
-		<lineColor>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-			<alpha>65535</alpha>
-		</lineColor>
-		<shadowColor>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-			<alpha>0</alpha>
-		</shadowColor>
-		<shadowOffset>
-			<width>0</width>
-			<height>0</height>
-		</shadowOffset>
-		<shadowBlurRadius>0</shadowBlurRadius>
-		<lieWidth>0</lieWidth>
-		<textAlign>center</textAlign>
-		<font>Lucida Grande</font>
-		<textSize>13</textSize>
-		<hasHorizontalScroller><false /></hasHorizontalScroller>
-		<hasVerticalScroller><false /></hasVerticalScroller>
-		<name>New Button</name>
-		<script>on mouseUp
+    </part>
+    <part>
+        <id>3</id>
+        <type>button</type>
+        <rect>
+            <left>60</left>
+            <top>52</top>
+            <right>172</right>
+            <bottom>92</bottom>
+        </rect>
+        <visible><true/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>65535</red>
+            <green>65535</green>
+            <blue>65535</blue>
+            <alpha>65535</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>1</lineWidth>
+        <bevelWidth>1</bevelWidth>
+        <bevelAngle>315</bevelAngle>
+        <toolTip></toolTip>
+        <style>standard</style>
+        <showName><true/></showName>
+        <autoHighlight><true/></autoHighlight>
+        <sharedHighlight><false/></sharedHighlight>
+        <family>0</family>
+        <titleWidth>0</titleWidth>
+        <icon>0</icon>
+        <textAlign>center</textAlign>
+        <font>Lucida Grande</font>
+        <textSize>13</textSize>
+        <textStyle>plain</textStyle>
+        <name>New Button</name>
+        <script>on mouseUp
 	set the number of me to number of card buttons
 end mouseUp</script>
-	</part>
-	<part>
-		<id>-1</id>
-		<type>field</type>
-		<layer>card</layer>
-		<visible><true /></visible>
-		<enabled><true /></enabled>
-		<rect>
-			<left>41</left>
-			<top>138</top>
-			<right>384</right>
-			<bottom>253</bottom>
-		</rect>
-		<style>rectangle</style>
-		<showName><false /></showName>
-		<highlight><false /></highlight>
-		<autoHighlight><true /></autoHighlight>
-		<sharedHighlight><false /></sharedHighlight>
-		<family>0</family>
-		<titleWidth>0</titleWidth>
-		<icon>0</icon>
-		<dontWrap><false /></dontWrap>
-		<dontSearch><false /></dontSearch>
-		<sharedText><false /></sharedText>
-		<fixedLineHeight><false /></fixedLineHeight>
-		<autoTab><false /></autoTab>
-		<lockText><false /></lockText>
-		<autoSelect><false /></autoSelect>
-		<multipleLines><false /></multipleLines>
-		<showLines><false /></showLines>
-		<wideMargins><false /></wideMargins>
-		<currentTime>0:00:00:00.00/1</currentTime>
-		<controllerVisible><false /></controllerVisible>
-		<fillColor>
-			<red>65535</red>
-			<green>65535</green>
-			<blue>65535</blue>
-			<alpha>65535</alpha>
-		</fillColor>
-		<lineColor>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-			<alpha>65535</alpha>
-		</lineColor>
-		<shadowColor>
-			<red>0</red>
-			<green>0</green>
-			<blue>0</blue>
-			<alpha>0</alpha>
-		</shadowColor>
-		<shadowOffset>
-			<width>0</width>
-			<height>0</height>
-		</shadowOffset>
-		<shadowBlurRadius>0</shadowBlurRadius>
-		<lieWidth>0</lieWidth>
-		<textAlign>left</textAlign>
-		<font>Lucida Grande</font>
-		<textSize>13</textSize>
-		<hasHorizontalScroller><false /></hasHorizontalScroller>
-		<hasVerticalScroller><false /></hasVerticalScroller>
-		<name></name>
-		<script></script>
-	</part>
-	<content>
-		<layer>card</layer>
-		<id>-1</id>
-		<text>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf370
-{\fonttbl\f0\fnil\fcharset0 LucidaGrande;}
-{\colortbl;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
-
-\f0\fs26 \cf0 Welcome!}</text>
-		<highlight><false /></highlight>
-	</content>
-	<owner>3000</owner>
-	<marked><false /></marked>
+    </part>
+    <part>
+        <id>-1</id>
+        <type>field</type>
+        <rect>
+            <left>41</left>
+            <top>138</top>
+            <right>384</right>
+            <bottom>253</bottom>
+        </rect>
+        <visible><true/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>65535</red>
+            <green>65535</green>
+            <blue>65535</blue>
+            <alpha>65535</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>1</lineWidth>
+        <bevelWidth>1</bevelWidth>
+        <bevelAngle>315</bevelAngle>
+        <toolTip></toolTip>
+        <dontWrap><false/></dontWrap>
+        <dontSearch><false/></dontSearch>
+        <sharedText><false/></sharedText>
+        <fixedLineHeight><false/></fixedLineHeight>
+        <autoTab><false/></autoTab>
+        <lockText><false/></lockText>
+        <style>rectangle</style>
+        <autoSelect><false/></autoSelect>
+        <showLines><false/></showLines>
+        <wideMargins><false/></wideMargins>
+        <multipleLines><false/></multipleLines>
+        <hasHorizontalScroller><false/></hasHorizontalScroller>
+        <hasVerticalScroller><false/></hasVerticalScroller>
+        <hasColumnHeaders><false/></hasColumnHeaders>
+        <textAlign>left</textAlign>
+        <font>Lucida Grande</font>
+        <textSize>13</textSize>
+        <textStyle>plain</textStyle>
+        <textHeight>12</textHeight>
+        <name></name>
+        <script></script>
+    </part>
+    <content>
+        <layer>card</layer>
+        <id>-1</id>
+        <text><span class="style1">Welcome!</span></text>
+    </content>
+    <name></name>
+    <script></script>
 </card>
