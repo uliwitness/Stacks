@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE stack PUBLIC "-//Apple, Inc.//DTD stack V 2.0//EN" "" >
+<stack>
+	<name>TowerDefense</name>
+	<id>-1</id>
+	<cardCount>1</cardCount>
+	<cardID>2865</cardID>
+	<listID>2058</listID>
+	<cantModify><false /></cantModify>
+	<cantDelete><false /></cantDelete>
+	<cantAbort><false /></cantAbort>
+	<cardSize>
+		<width>512</width>
+		<height>342</height>
+	</cardSize>
+	<script></script>
+	<background id="2803" file="background_2803.xml" name="" />
+	<card id="2865" file="card_2865.xml" marked="false" name="" />
+</stack>
