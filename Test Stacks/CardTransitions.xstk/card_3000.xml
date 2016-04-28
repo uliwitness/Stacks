@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE card PUBLIC "-//Apple, Inc.//DTD card V 2.0//EN" "">
+<card>
+    <id>3000</id>
+    <bitmap></bitmap>
+    <cantDelete><false/></cantDelete>
+    <showPict><true/></showPict>
+    <dontSearch><false/></dontSearch>
+    <owner>1000</owner>
+    <part>
+        <id>0</id>
+        <type>graphic</type>
+        <pinning>
+            <stretchHorizontally/>
+            <stretchVertically/>
+        </pinning>
+        <rect>
+            <left>0</left>
+            <top>0</top>
+            <right>0</right>
+            <bottom>50</bottom>
+        </rect>
+        <visible><true/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>32896</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>0</lineWidth>
+        <bevelWidth>0</bevelWidth>
+        <bevelAngle>0</bevelAngle>
+        <toolTip></toolTip>
+        <style>roundrect</style>
+        <name></name>
+        <script></script>
+    </part>
+    <name></name>
+    <script>on foobar hey
+	visual effect iris close
+	go next card
+	return "FOO! BAR!" &amp;&amp; hey
+end foobar</script>
+</card>
