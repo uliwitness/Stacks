@@ -240,10 +240,96 @@ end mouseUp</script>
         <textStyle>plain</textStyle>
         <name>Shrink</name>
         <script>on mouseUp
-	visual effect shrink to bottom
+	visual effect stretch from top
 	go next card
 end mouseUp</script>
     </part>
+    <part>
+        <id>4</id>
+        <type>button</type>
+        <pinning><bottom/></pinning>
+        <rect>
+            <left>106</left>
+            <top>34</top>
+            <right>309</right>
+            <bottom>10</bottom>
+        </rect>
+        <visible><true/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>65535</red>
+            <green>65535</green>
+            <blue>65535</blue>
+            <alpha>65535</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>1</lineWidth>
+        <bevelWidth>0</bevelWidth>
+        <bevelAngle>0</bevelAngle>
+        <toolTip></toolTip>
+        <style>popup</style>
+        <showName><true/></showName>
+        <highlight><false/></highlight>
+        <autoHighlight><true/></autoHighlight>
+        <sharedHighlight><true/></sharedHighlight>
+        <family>0</family>
+        <titleWidth>0</titleWidth>
+        <icon>0</icon>
+        <cursor>128</cursor>
+        <selectedLines>
+            <integer>17</integer>
+        </selectedLines>
+        <textAlign>default</textAlign>
+        <font></font>
+        <textSize>12</textSize>
+        <textStyle>plain</textStyle>
+        <name>Transition</name>
+        <script>on mouseUp
+	visual effect line (the selectedLine of me) of me
+	go next card
+end mouseUp</script>
+    </part>
+    <content>
+        <layer>background</layer>
+        <id>4</id>
+        <text>barn door close
+barn door open
+dissolve
+iris close
+iris open
+push down
+push left
+push right
+push up
+scroll down
+scroll left
+scroll right
+scroll up
+wipe down
+wipe left
+wipe right
+wipe up
+shrink to top
+shrink to bottom
+stretch from bottom
+stretch from top</text>
+    </content>
     <name></name>
     <script></script>
 </background>
