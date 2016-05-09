@@ -7,6 +7,7 @@
     <showPict><true/></showPict>
     <dontSearch><false/></dontSearch>
     <owner>1000</owner>
+    <link rel="stylesheet" type="text/css" href="stylesheet_card_3000.css"/>
     <part>
         <id>0</id>
         <type>graphic</type>
@@ -44,20 +45,20 @@
         <lineWidth>1</lineWidth>
         <bevelWidth>0</bevelWidth>
         <bevelAngle>0</bevelAngle>
-		<gradientColors>
-			<color>
-				<red>0</red>
-				<green>0</green>
-				<blue>0</blue>
-				<alpha>65535</alpha>
-			</color>
-			<color>
-				<red>65535</red>
-				<green>65535</green>
-				<blue>65535</blue>
-				<alpha>65535</alpha>
-			</color>
-		</gradientColors>
+        <gradientColors>
+            <color>
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+                <alpha>65535</alpha>
+            </color>
+            <color>
+                <red>65535</red>
+                <green>65535</green>
+                <blue>65535</blue>
+                <alpha>65535</alpha>
+            </color>
+        </gradientColors>
         <style>bezierpath</style>
         <path>
             <segment>
@@ -1132,7 +1133,15 @@
             </segment>
         </path>
         <name></name>
-        <script></script>
+        <script>
+note: This is a very important script!
+on mouseUp
+	
+end mouseUp
+
+on mouseDoubleClick
+	
+end mouseDoubleClick</script>
     </part>
     <part>
         <id>1</id>
@@ -1171,20 +1180,20 @@
         <lineWidth>1</lineWidth>
         <bevelWidth>0</bevelWidth>
         <bevelAngle>0</bevelAngle>
-		<gradientColors>
-			<color>
-				<red>0</red>
-				<green>0</green>
-				<blue>0</blue>
-				<alpha>65535</alpha>
-			</color>
-			<color>
-				<red>32767</red>
-				<green>0</green>
-				<blue>0</blue>
-				<alpha>65535</alpha>
-			</color>
-		</gradientColors>
+        <gradientColors>
+            <color>
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+                <alpha>65535</alpha>
+            </color>
+            <color>
+                <red>32767</red>
+                <green>0</green>
+                <blue>0</blue>
+                <alpha>65535</alpha>
+            </color>
+        </gradientColors>
         <style>bezierpath</style>
         <path>
             <segment>
@@ -2003,20 +2012,20 @@
         <lineWidth>1</lineWidth>
         <bevelWidth>0</bevelWidth>
         <bevelAngle>0</bevelAngle>
-		<gradientColors>
-			<color>
-				<red>0</red>
-				<green>0</green>
-				<blue>0</blue>
-				<alpha>65535</alpha>
-			</color>
-			<color>
-				<red>0</red>
-				<green>32767</green>
-				<blue>0</blue>
-				<alpha>65535</alpha>
-			</color>
-		</gradientColors>
+        <gradientColors>
+            <color>
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+                <alpha>65535</alpha>
+            </color>
+            <color>
+                <red>0</red>
+                <green>32767</green>
+                <blue>0</blue>
+                <alpha>65535</alpha>
+            </color>
+        </gradientColors>
         <style>bezierpath</style>
         <path>
             <segment>
@@ -3210,20 +3219,20 @@
         <lineWidth>1</lineWidth>
         <bevelWidth>0</bevelWidth>
         <bevelAngle>0</bevelAngle>
-		<gradientColors>
-			<color>
-				<red>0</red>
-				<green>0</green>
-				<blue>0</blue>
-				<alpha>65535</alpha>
-			</color>
-			<color>
-				<red>0</red>
-				<green>0</green>
-				<blue>32767</blue>
-				<alpha>65535</alpha>
-			</color>
-		</gradientColors>
+        <gradientColors>
+            <color>
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+                <alpha>65535</alpha>
+            </color>
+            <color>
+                <red>0</red>
+                <green>0</green>
+                <blue>32767</blue>
+                <alpha>65535</alpha>
+            </color>
+        </gradientColors>
         <style>bezierpath</style>
         <path>
             <segment>
@@ -4030,6 +4039,204 @@
         <name></name>
         <script></script>
     </part>
+    <part>
+        <id>4</id>
+        <type>field</type>
+        <rect>
+            <left>27</left>
+            <top>171</top>
+            <right>152</right>
+            <bottom>318</bottom>
+        </rect>
+        <visible><true/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>65535</red>
+            <green>65535</green>
+            <blue>65535</blue>
+            <alpha>65535</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>1</lineWidth>
+        <bevelWidth>0</bevelWidth>
+        <bevelAngle>0</bevelAngle>
+        <dontWrap><false/></dontWrap>
+        <dontSearch><false/></dontSearch>
+        <sharedText><false/></sharedText>
+        <fixedLineHeight><false/></fixedLineHeight>
+        <autoTab><false/></autoTab>
+        <lockText><true/></lockText>
+        <style>standard</style>
+        <autoSelect><false/></autoSelect>
+        <showLines><false/></showLines>
+        <wideMargins><false/></wideMargins>
+        <multipleLines><false/></multipleLines>
+        <cursor>128</cursor>
+        <hasHorizontalScroller><false/></hasHorizontalScroller>
+        <hasVerticalScroller><false/></hasVerticalScroller>
+        <hasColumnHeaders><false/></hasColumnHeaders>
+        <textAlign>default</textAlign>
+        <font></font>
+        <textSize>12</textSize>
+        <textStyle>plain</textStyle>
+        <textHeight>0</textHeight>
+        <name>windowRect</name>
+        <script>on mouseUp
+	set my rememberedRect to me
+end mouseUp</script>
+        <userProperties>
+            <name>rememberedrect</name>
+            <value>left:375
+top:157
+right:887
+bottom:499</value>
+        </userProperties>
+    </part>
+    <part>
+        <id>5</id>
+        <type>button</type>
+        <rect>
+            <left>165</left>
+            <top>171</top>
+            <right>265</right>
+            <bottom>197</bottom>
+        </rect>
+        <visible><true/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>65535</red>
+            <green>65535</green>
+            <blue>65535</blue>
+            <alpha>65535</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>1</lineWidth>
+        <bevelWidth>0</bevelWidth>
+        <bevelAngle>0</bevelAngle>
+        <style>default</style>
+        <showName><true/></showName>
+        <autoHighlight><true/></autoHighlight>
+        <sharedHighlight><false/></sharedHighlight>
+        <family>0</family>
+        <titleWidth>0</titleWidth>
+        <icon>0</icon>
+        <cursor>128</cursor>
+        <textAlign>default</textAlign>
+        <font></font>
+        <textSize>12</textSize>
+        <textStyle>plain</textStyle>
+        <name>Reset position</name>
+        <script>on mouseUp buttonNumber
+	set the rect of this stack to the rememberedRect of cd fld 1
+end mouseUp</script>
+    </part>
+    <part>
+        <id>6</id>
+        <type>field</type>
+        <rect>
+            <left>165</left>
+            <top>208</top>
+            <right>265</right>
+            <bottom>258</bottom>
+        </rect>
+        <visible><true/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>65535</red>
+            <green>65535</green>
+            <blue>65535</blue>
+            <alpha>65535</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>1</lineWidth>
+        <bevelWidth>0</bevelWidth>
+        <bevelAngle>0</bevelAngle>
+        <dontWrap><false/></dontWrap>
+        <dontSearch><false/></dontSearch>
+        <sharedText><false/></sharedText>
+        <fixedLineHeight><false/></fixedLineHeight>
+        <autoTab><false/></autoTab>
+        <lockText><false/></lockText>
+        <style>standard</style>
+        <autoSelect><false/></autoSelect>
+        <showLines><false/></showLines>
+        <wideMargins><false/></wideMargins>
+        <multipleLines><false/></multipleLines>
+        <cursor>128</cursor>
+        <hasHorizontalScroller><false/></hasHorizontalScroller>
+        <hasVerticalScroller><false/></hasVerticalScroller>
+        <hasColumnHeaders><false/></hasColumnHeaders>
+        <textAlign>default</textAlign>
+        <font></font>
+        <textSize>12</textSize>
+        <textStyle>plain</textStyle>
+        <textHeight>0</textHeight>
+        <name></name>
+        <script></script>
+    </part>
+    <content>
+        <layer>card</layer>
+        <id>4</id>
+        <text>left:375
+top:157
+right:887
+bottom:499</text>
+    </content>
+    <content>
+        <layer>card</layer>
+        <id>6</id>
+        <text><span class="style1">Does this make sense?</span></text>
+    </content>
     <name></name>
-    <script></script>
+    <script>on moveWindow
+	put the rect of this stack into cd fld "windowRect"
+end moveWindow</script>
 </card>

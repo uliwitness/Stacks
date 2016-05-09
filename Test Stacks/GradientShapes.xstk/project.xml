@@ -2,11 +2,12 @@
 <!DOCTYPE project PUBLIC "-//Apple, Inc.//DTD project V 2.0//EN" "">
 <project>
     <stack id="1" file="stack_1.xml" name="Stack 1" thumbnail="stack_1.jpg"/>
+    <stack id="2" file="stack_2.xml" name="Palette"/>
     <userLevel>5</userLevel>
     <privateAccess><false/></privateAccess>
     <cantPeek><false/></cantPeek>
     <createdByVersion>Stacksmith 1.0a11 (1485)</createdByVersion>
     <lastCompactedVersion>Stacksmith 1.0a11 (1485)</lastCompactedVersion>
     <firstEditedVersion>Stacksmith 1.0a11 (1485)</firstEditedVersion>
-    <lastEditedVersion>Stacksmith 1.0a11 (1485)</lastEditedVersion>
+    <lastEditedVersion>Stacksmith 1.0a11 (1509)</lastEditedVersion>
 </project>
