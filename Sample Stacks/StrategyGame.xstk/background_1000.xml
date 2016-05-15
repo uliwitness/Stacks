@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE background PUBLIC "-//Apple, Inc.//DTD background V 2.0//EN" "">
+<background>
+    <id>1000</id>
+    <bitmap></bitmap>
+    <cantDelete><false/></cantDelete>
+    <showPict><true/></showPict>
+    <dontSearch><false/></dontSearch>
+    <part>
+        <id>5</id>
+        <type>graphic</type>
+        <rect>
+            <left>230</left>
+            <top>180</top>
+            <right>502</right>
+            <bottom>418</bottom>
+        </rect>
+        <visible><false/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>26214</red>
+            <green>26214</green>
+            <blue>65535</blue>
+            <alpha>8308</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>65535</green>
+            <blue>65535</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>1</lineWidth>
+        <bevelWidth>0</bevelWidth>
+        <bevelAngle>0</bevelAngle>
+        <style>roundrect</style>
+        <name>selectionRectangle</name>
+        <script></script>
+    </part>
+    <name></name>
+    <script>on unitSelectedPropertyChange
+	if unitSelected of the target is true then
+		set the lineWidth of the target to 2
+	else
+		set the lineWidth of the target to 0
+	end if
+end unitSelectedPropertyChange
+
+on mouseDown buttonNumber,firstModifier
+	if the target has property unitSelected then
+		if firstModifier is not shift then
+			repeat with x = 1 to number of card buttons
+			set the unitSelected of card button x to false
+			end repeat
+			set the unitSelected of the target to true
+		else
+			set the unitSelected of the target to (not the unitSelected of the target)
+		end if
+	else
+		show bg grc "selectionRectangle"
+			repeat with x = 1 to number of card buttons
+			set the unitSelected of card button x to false
+			end repeat
+				repeat while the mouse is down
+				end repeat
+				hide bg grc "selectionRectangle"
+			end if
+		end mouseDown</script>
+</background>
