@@ -11,10 +11,10 @@
         <id>0</id>
         <type>button</type>
         <rect>
-            <left>32</left>
-            <top>50</top>
-            <right>100</right>
-            <bottom>116</bottom>
+            <left>50</left>
+            <top>48</top>
+            <right>118</right>
+            <bottom>114</bottom>
         </rect>
         <visible><true/></visible>
         <enabled><true/></enabled>
@@ -287,6 +287,131 @@
             <value>false</value>
         </userProperties>
     </part>
+    <part>
+        <id>5</id>
+        <type>button</type>
+        <rect>
+            <left>407</left>
+            <top>178</top>
+            <right>507</right>
+            <bottom>203</bottom>
+        </rect>
+        <visible><true/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>65535</red>
+            <green>65535</green>
+            <blue>65535</blue>
+            <alpha>65535</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>1</lineWidth>
+        <bevelWidth>0</bevelWidth>
+        <bevelAngle>0</bevelAngle>
+        <style>standard</style>
+        <showName><true/></showName>
+        <autoHighlight><true/></autoHighlight>
+        <sharedHighlight><false/></sharedHighlight>
+        <family>0</family>
+        <titleWidth>0</titleWidth>
+        <icon>0</icon>
+        <cursor>128</cursor>
+        <textAlign>default</textAlign>
+        <font></font>
+        <textSize>12</textSize>
+        <textStyle>plain</textStyle>
+        <name>StrategyGame</name>
+        <script>on mouseUp
+	set the name of me to name of the mainStack
+end mouseUp</script>
+    </part>
+    <part>
+        <id>6</id>
+        <type>field</type>
+        <rect>
+            <left>25</left>
+            <top>378</top>
+            <right>125</right>
+            <bottom>402</bottom>
+        </rect>
+        <visible><true/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>65535</red>
+            <green>65535</green>
+            <blue>65535</blue>
+            <alpha>65535</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>1</lineWidth>
+        <bevelWidth>0</bevelWidth>
+        <bevelAngle>0</bevelAngle>
+        <dontWrap><false/></dontWrap>
+        <dontSearch><false/></dontSearch>
+        <sharedText><false/></sharedText>
+        <fixedLineHeight><false/></fixedLineHeight>
+        <autoTab><false/></autoTab>
+        <lockText><false/></lockText>
+        <style>standard</style>
+        <autoSelect><false/></autoSelect>
+        <showLines><false/></showLines>
+        <wideMargins><false/></wideMargins>
+        <multipleLines><false/></multipleLines>
+        <cursor>128</cursor>
+        <hasHorizontalScroller><false/></hasHorizontalScroller>
+        <hasVerticalScroller><false/></hasVerticalScroller>
+        <hasColumnHeaders><false/></hasColumnHeaders>
+        <textAlign>default</textAlign>
+        <font></font>
+        <textSize>12</textSize>
+        <textStyle>plain</textStyle>
+        <textHeight>0</textHeight>
+        <name></name>
+        <script></script>
+    </part>
+    <content>
+        <layer>card</layer>
+        <id>6</id>
+    </content>
     <name></name>
-    <script></script>
+    <script>--on doMenu itemName
+--	put "Card received doMenu" &amp;&amp; quote &amp; itemName &amp; quote
+--	pass doMenu itemName
+--end doMenu
+
+on doTheUndoThing
+	answer "Menu item chosen!"
+end doTheUndoThing</script>
 </card>

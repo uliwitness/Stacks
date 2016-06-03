@@ -1,12 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE project PUBLIC "-//Apple, Inc.//DTD project V 2.0//EN" "">
 <project>
-    <stack id="1" file="stack_1.xml" name="StrategyGame" thumbnail="stack_1.jpg"/>
     <userLevel>5</userLevel>
     <privateAccess><false/></privateAccess>
     <cantPeek><false/></cantPeek>
     <createdByVersion>Stacksmith 1.0a11 (1536)</createdByVersion>
     <lastCompactedVersion>Stacksmith 1.0a11 (1536)</lastCompactedVersion>
     <firstEditedVersion>Stacksmith 1.0a11 (1536)</firstEditedVersion>
-    <lastEditedVersion>Stacksmith 1.0a11 (1540)</lastEditedVersion>
+    <lastEditedVersion>Stacksmith 1.0a11 (1570)</lastEditedVersion>
+    <script>--on doMenu itemName
+--	put "Project got doMenu:" &amp;&amp; itemName
+--	pass doMenu itemName
+--end doMenu
+
+on menuBarHeightChange newHeight
+	put the rect of stack "toolbar" into toolbarRect
+	put newHeight +(the bottom of toolbarRect - the top of toolbarRect) into the bottom of toolbarRect
+	put 0 into the top of toolbarRect
+	put newHeight into the top of toolbarRect
+	set the rect of stack "toolbar" to toolbarRect
+end menuBarHeightChange</script>
+    <stack id="1" file="stack_1.xml" name="StrategyGame" thumbnail="stack_1.jpg"/>
+    <stack id="2" file="stack_2.xml" name="toolbar" thumbnail="stack_2.jpg"/>
+    <menu>
+        <id>1</id>
+        <name>File</name>
+        <script>-- file menu script</script>
+        <item>
+            <id>2</id>
+            <name>Open</name>
+            <commandChar>O</commandChar>
+        </item>
+        <item>
+            <id>3</id>
+            <name>-</name>
+            <style>separator</style>
+        </item>
+        <item>
+            <id>4</id>
+            <name>Close</name>
+            <commandChar>W</commandChar>
+            <message></message>
+            <script>on doMenu itemName
+	put "Item got doMenu:" &amp;&amp; itemName
+end doMenu</script>
+        </item>
+        <item>
+            <id>5</id>
+            <name>Sidefumbling</name>
+            <commandChar>/</commandChar>
+            <markChar>✓</markChar>
+            <enabled><false/></enabled>
+        </item>
+    </menu>
+    <menu>
+        <id>100</id>
+        <name>Edit</name>
+        <item>
+            <id>100</id>
+            <name>Undo</name>
+            <message>doTheUndoThing</message>
+        </item>
+    </menu>
 </project>

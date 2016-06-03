@@ -10,10 +10,10 @@
         <id>5</id>
         <type>graphic</type>
         <rect>
-            <left>17</left>
-            <top>50</top>
-            <right>209</right>
-            <bottom>316</bottom>
+            <left>285</left>
+            <top>210</top>
+            <right>285</right>
+            <bottom>210</bottom>
         </rect>
         <visible><false/></visible>
         <enabled><true/></enabled>
@@ -60,7 +60,9 @@ on mouseDown buttonNumber,firstModifier
 	if the target has property unitSelected then
 		if firstModifier is not shift then
 			repeat with x = 1 to number of card buttons
-			set the unitSelected of card button x to false
+			if card button x has property unitSelected then
+				set the unitSelected of card button x to false
+			end if
 			end repeat
 			set the unitSelected of the target to true
 		else
@@ -69,7 +71,9 @@ on mouseDown buttonNumber,firstModifier
 	else
 		show bg grc "selectionRectangle"
 			repeat with x = 1 to number of card buttons
-			set the unitSelected of card button x to false
+			if cd btn x has property unitSelected then
+				set the unitSelected of card button x to false
+			end if
 			end repeat
 			set rectangle of bg grc "selectionRectangle" to "left:" &amp; horizontal of the mouseLoc &amp; return &amp; "top:" &amp; vertical of the mouseLoc &amp;return&amp; "right:" &amp; horizontal of the mouseLoc &amp;return&amp; "bottom:" &amp; vertical of the mouseLoc
 		end if
