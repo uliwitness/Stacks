@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE project PUBLIC "-//Apple, Inc.//DTD project V 2.0//EN" "">
+<project>
+    <userLevel>5</userLevel>
+    <privateAccess><false/></privateAccess>
+    <cantPeek><false/></cantPeek>
+    <createdByVersion>Stacksmith 1.0a11 (1540)</createdByVersion>
+    <lastCompactedVersion>Stacksmith 1.0a11 (1540)</lastCompactedVersion>
+    <firstEditedVersion>Stacksmith 1.0a11 (1540)</firstEditedVersion>
+    <lastEditedVersion>Stacksmith 1.0a11 (1540)</lastEditedVersion>
+    <stack id="1" file="stack_1.xml" name="Properties"/>
+</project>
