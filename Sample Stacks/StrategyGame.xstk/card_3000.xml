@@ -41,7 +41,7 @@
             <height>0</height>
         </shadowOffset>
         <shadowBlurRadius>0</shadowBlurRadius>
-        <lineWidth>0</lineWidth>
+        <lineWidth>2</lineWidth>
         <bevelWidth>0</bevelWidth>
         <bevelAngle>0</bevelAngle>
         <style>oval</style>
@@ -60,7 +60,7 @@
         <script></script>
         <userProperties>
             <name>unitselected</name>
-            <value>false</value>
+            <value>true</value>
         </userProperties>
     </part>
     <part>
@@ -97,7 +97,7 @@
             <height>0</height>
         </shadowOffset>
         <shadowBlurRadius>0</shadowBlurRadius>
-        <lineWidth>0</lineWidth>
+        <lineWidth>2</lineWidth>
         <bevelWidth>0</bevelWidth>
         <bevelAngle>0</bevelAngle>
         <style>oval</style>
@@ -116,7 +116,7 @@
         <script></script>
         <userProperties>
             <name>unitselected</name>
-            <value>false</value>
+            <value>true</value>
         </userProperties>
     </part>
     <part>
@@ -153,7 +153,7 @@
             <height>0</height>
         </shadowOffset>
         <shadowBlurRadius>0</shadowBlurRadius>
-        <lineWidth>0</lineWidth>
+        <lineWidth>2</lineWidth>
         <bevelWidth>0</bevelWidth>
         <bevelAngle>0</bevelAngle>
         <style>oval</style>
@@ -172,7 +172,7 @@
         <script></script>
         <userProperties>
             <name>unitselected</name>
-            <value>false</value>
+            <value>true</value>
         </userProperties>
     </part>
     <part>
@@ -209,7 +209,7 @@
             <height>0</height>
         </shadowOffset>
         <shadowBlurRadius>0</shadowBlurRadius>
-        <lineWidth>0</lineWidth>
+        <lineWidth>2</lineWidth>
         <bevelWidth>0</bevelWidth>
         <bevelAngle>0</bevelAngle>
         <style>oval</style>
@@ -228,7 +228,7 @@
         <script></script>
         <userProperties>
             <name>unitselected</name>
-            <value>false</value>
+            <value>true</value>
         </userProperties>
     </part>
     <part>
@@ -265,7 +265,7 @@
             <height>0</height>
         </shadowOffset>
         <shadowBlurRadius>0</shadowBlurRadius>
-        <lineWidth>0</lineWidth>
+        <lineWidth>2</lineWidth>
         <bevelWidth>0</bevelWidth>
         <bevelAngle>0</bevelAngle>
         <style>oval</style>
@@ -284,7 +284,7 @@
         <script></script>
         <userProperties>
             <name>unitselected</name>
-            <value>false</value>
+            <value>true</value>
         </userProperties>
     </part>
     <part>

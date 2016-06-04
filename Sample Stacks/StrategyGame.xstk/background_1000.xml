@@ -10,10 +10,10 @@
         <id>5</id>
         <type>graphic</type>
         <rect>
-            <left>285</left>
-            <top>210</top>
-            <right>285</right>
-            <bottom>210</bottom>
+            <left>28</left>
+            <top>33</top>
+            <right>191</right>
+            <bottom>312</bottom>
         </rect>
         <visible><false/></visible>
         <enabled><true/></enabled>
@@ -84,7 +84,16 @@ on mouseDown buttonNumber,firstModifier
 	end mouseDrag
 	
 	on mouseUp
-		hide bg grc "selectionRectangle"
+		if the visible of bg grc "selectionRectangle" is true then
+			repeat with x = 1 to number of card buttons
+			if cd btn x has property unitSelected then
+				if the rectangle of cd btn x intersects the rectangle of bg grc "selectionRectangle" then
+					set the unitSelected of card button x to true
+				end if
+			end if
+			end repeat
+			hide bg grc "selectionRectangle"
+		end if
 	end mouseUp
 	
 	on mouseUpOutside
