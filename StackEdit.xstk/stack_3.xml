@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE stack PUBLIC "-//Apple, Inc.//DTD stack V 2.0//EN" "">
+<stack>
+    <id>3</id>
+    <name>StackEdit Splash</name>
+    <documentURL></documentURL>
+    <style>document</style>
+    <cardCount>1</cardCount>
+    <cantModify><false/></cantModify>
+    <cantDelete><false/></cantDelete>
+    <cantAbort><false/></cantAbort>
+    <privateAccess><false/></privateAccess>
+    <cantPeek><false/></cantPeek>
+    <resizable><false/></resizable>
+    <cardSize>
+        <width>512</width>
+        <height>342</height>
+    </cardSize>
+    <script></script>
+    <background id="1002" file="background_1002.xml" name=""/>
+    <card id="3002" file="card_3002.xml" name="" owner="1002"/>
+</stack>

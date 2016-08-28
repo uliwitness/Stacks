@@ -1,300 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE card PUBLIC "-//Apple, Inc.//DTD card V 2.0//EN" "">
 <card>
-    <id>3000</id>
+    <id>3001</id>
     <bitmap></bitmap>
     <cantDelete><false/></cantDelete>
     <showPict><true/></showPict>
     <dontSearch><false/></dontSearch>
-    <owner>1000</owner>
+    <owner>1001</owner>
     <part>
         <id>0</id>
         <type>button</type>
         <rect>
-            <left>50</left>
-            <top>48</top>
-            <right>118</right>
-            <bottom>114</bottom>
-        </rect>
-        <visible><true/></visible>
-        <enabled><true/></enabled>
-        <fillColor>
-            <red>65535</red>
-            <green>65535</green>
-            <blue>65535</blue>
-            <alpha>0</alpha>
-        </fillColor>
-        <lineColor>
-            <red>0</red>
-            <green>65535</green>
-            <blue>65535</blue>
-            <alpha>65535</alpha>
-        </lineColor>
-        <shadowColor>
-            <red>0</red>
-            <green>0</green>
-            <blue>0</blue>
-            <alpha>0</alpha>
-        </shadowColor>
-        <shadowOffset>
-            <width>0</width>
-            <height>0</height>
-        </shadowOffset>
-        <shadowBlurRadius>0</shadowBlurRadius>
-        <lineWidth>0</lineWidth>
-        <bevelWidth>0</bevelWidth>
-        <bevelAngle>0</bevelAngle>
-        <style>oval</style>
-        <showName><false/></showName>
-        <autoHighlight><false/></autoHighlight>
-        <sharedHighlight><false/></sharedHighlight>
-        <family>0</family>
-        <titleWidth>0</titleWidth>
-        <icon>1000</icon>
-        <cursor>128</cursor>
-        <textAlign>default</textAlign>
-        <font></font>
-        <textSize>12</textSize>
-        <textStyle>plain</textStyle>
-        <name>New Button</name>
-        <script></script>
-        <userProperties>
-            <name>unitselected</name>
-            <value>false</value>
-        </userProperties>
-    </part>
-    <part>
-        <id>1</id>
-        <type>button</type>
-        <rect>
-            <left>110</left>
-            <top>192</top>
-            <right>178</right>
-            <bottom>258</bottom>
-        </rect>
-        <visible><true/></visible>
-        <enabled><true/></enabled>
-        <fillColor>
-            <red>65535</red>
-            <green>65535</green>
-            <blue>65535</blue>
-            <alpha>0</alpha>
-        </fillColor>
-        <lineColor>
-            <red>0</red>
-            <green>65535</green>
-            <blue>65535</blue>
-            <alpha>65535</alpha>
-        </lineColor>
-        <shadowColor>
-            <red>0</red>
-            <green>0</green>
-            <blue>0</blue>
-            <alpha>0</alpha>
-        </shadowColor>
-        <shadowOffset>
-            <width>0</width>
-            <height>0</height>
-        </shadowOffset>
-        <shadowBlurRadius>0</shadowBlurRadius>
-        <lineWidth>0</lineWidth>
-        <bevelWidth>0</bevelWidth>
-        <bevelAngle>0</bevelAngle>
-        <style>oval</style>
-        <showName><false/></showName>
-        <autoHighlight><false/></autoHighlight>
-        <sharedHighlight><false/></sharedHighlight>
-        <family>0</family>
-        <titleWidth>0</titleWidth>
-        <icon>1000</icon>
-        <cursor>128</cursor>
-        <textAlign>default</textAlign>
-        <font></font>
-        <textSize>12</textSize>
-        <textStyle>plain</textStyle>
-        <name>New Button</name>
-        <script></script>
-        <userProperties>
-            <name>unitselected</name>
-            <value>false</value>
-        </userProperties>
-    </part>
-    <part>
-        <id>2</id>
-        <type>button</type>
-        <rect>
-            <left>32</left>
-            <top>145</top>
-            <right>100</right>
-            <bottom>211</bottom>
-        </rect>
-        <visible><true/></visible>
-        <enabled><true/></enabled>
-        <fillColor>
-            <red>65535</red>
-            <green>65535</green>
-            <blue>65535</blue>
-            <alpha>0</alpha>
-        </fillColor>
-        <lineColor>
-            <red>0</red>
-            <green>65535</green>
-            <blue>65535</blue>
-            <alpha>65535</alpha>
-        </lineColor>
-        <shadowColor>
-            <red>0</red>
-            <green>0</green>
-            <blue>0</blue>
-            <alpha>0</alpha>
-        </shadowColor>
-        <shadowOffset>
-            <width>0</width>
-            <height>0</height>
-        </shadowOffset>
-        <shadowBlurRadius>0</shadowBlurRadius>
-        <lineWidth>0</lineWidth>
-        <bevelWidth>0</bevelWidth>
-        <bevelAngle>0</bevelAngle>
-        <style>oval</style>
-        <showName><false/></showName>
-        <autoHighlight><false/></autoHighlight>
-        <sharedHighlight><false/></sharedHighlight>
-        <family>0</family>
-        <titleWidth>0</titleWidth>
-        <icon>1000</icon>
-        <cursor>128</cursor>
-        <textAlign>default</textAlign>
-        <font></font>
-        <textSize>12</textSize>
-        <textStyle>plain</textStyle>
-        <name>New Button</name>
-        <script></script>
-        <userProperties>
-            <name>unitselected</name>
-            <value>false</value>
-        </userProperties>
-    </part>
-    <part>
-        <id>3</id>
-        <type>button</type>
-        <rect>
-            <left>100</left>
-            <top>103</top>
-            <right>168</right>
-            <bottom>169</bottom>
-        </rect>
-        <visible><true/></visible>
-        <enabled><true/></enabled>
-        <fillColor>
-            <red>65535</red>
-            <green>65535</green>
-            <blue>65535</blue>
-            <alpha>0</alpha>
-        </fillColor>
-        <lineColor>
-            <red>0</red>
-            <green>65535</green>
-            <blue>65535</blue>
-            <alpha>65535</alpha>
-        </lineColor>
-        <shadowColor>
-            <red>0</red>
-            <green>0</green>
-            <blue>0</blue>
-            <alpha>0</alpha>
-        </shadowColor>
-        <shadowOffset>
-            <width>0</width>
-            <height>0</height>
-        </shadowOffset>
-        <shadowBlurRadius>0</shadowBlurRadius>
-        <lineWidth>0</lineWidth>
-        <bevelWidth>0</bevelWidth>
-        <bevelAngle>0</bevelAngle>
-        <style>oval</style>
-        <showName><false/></showName>
-        <autoHighlight><false/></autoHighlight>
-        <sharedHighlight><false/></sharedHighlight>
-        <family>0</family>
-        <titleWidth>0</titleWidth>
-        <icon>1000</icon>
-        <cursor>128</cursor>
-        <textAlign>default</textAlign>
-        <font></font>
-        <textSize>12</textSize>
-        <textStyle>plain</textStyle>
-        <name>New Button</name>
-        <script></script>
-        <userProperties>
-            <name>unitselected</name>
-            <value>false</value>
-        </userProperties>
-    </part>
-    <part>
-        <id>4</id>
-        <type>button</type>
-        <rect>
-            <left>54</left>
-            <top>238</top>
-            <right>122</right>
-            <bottom>304</bottom>
-        </rect>
-        <visible><true/></visible>
-        <enabled><true/></enabled>
-        <fillColor>
-            <red>65535</red>
-            <green>65535</green>
-            <blue>65535</blue>
-            <alpha>0</alpha>
-        </fillColor>
-        <lineColor>
-            <red>0</red>
-            <green>65535</green>
-            <blue>65535</blue>
-            <alpha>65535</alpha>
-        </lineColor>
-        <shadowColor>
-            <red>0</red>
-            <green>0</green>
-            <blue>0</blue>
-            <alpha>0</alpha>
-        </shadowColor>
-        <shadowOffset>
-            <width>0</width>
-            <height>0</height>
-        </shadowOffset>
-        <shadowBlurRadius>0</shadowBlurRadius>
-        <lineWidth>0</lineWidth>
-        <bevelWidth>0</bevelWidth>
-        <bevelAngle>0</bevelAngle>
-        <style>oval</style>
-        <showName><false/></showName>
-        <autoHighlight><false/></autoHighlight>
-        <sharedHighlight><false/></sharedHighlight>
-        <family>0</family>
-        <titleWidth>0</titleWidth>
-        <icon>1000</icon>
-        <cursor>128</cursor>
-        <textAlign>default</textAlign>
-        <font></font>
-        <textSize>12</textSize>
-        <textStyle>plain</textStyle>
-        <name>New Button</name>
-        <script></script>
-        <userProperties>
-            <name>unitselected</name>
-            <value>false</value>
-        </userProperties>
-    </part>
-    <part>
-        <id>5</id>
-        <type>button</type>
-        <rect>
-            <left>407</left>
-            <top>178</top>
-            <right>507</right>
-            <bottom>203</bottom>
+            <left>20</left>
+            <top>20</top>
+            <right>147</right>
+            <bottom>45</bottom>
         </rect>
         <visible><true/></visible>
         <enabled><true/></enabled>
@@ -331,24 +51,24 @@
         <family>0</family>
         <titleWidth>0</titleWidth>
         <icon>0</icon>
-        <cursor>128</cursor>
+        <cursor>0</cursor>
         <textAlign>default</textAlign>
         <font></font>
         <textSize>12</textSize>
         <textStyle>plain</textStyle>
-        <name>StrategyGame</name>
+        <name>Browse</name>
         <script>on mouseUp
-	set the name of me to name of the mainStack
+	set the tool of the mainStack to browse
 end mouseUp</script>
     </part>
     <part>
-        <id>6</id>
-        <type>field</type>
+        <id>1</id>
+        <type>button</type>
         <rect>
-            <left>25</left>
-            <top>378</top>
-            <right>125</right>
-            <bottom>402</bottom>
+            <left>20</left>
+            <top>54</top>
+            <right>147</right>
+            <bottom>79</bottom>
         </rect>
         <visible><true/></visible>
         <enabled><true/></enabled>
@@ -378,96 +98,347 @@ end mouseUp</script>
         <lineWidth>1</lineWidth>
         <bevelWidth>0</bevelWidth>
         <bevelAngle>0</bevelAngle>
-        <dontWrap><false/></dontWrap>
-        <dontSearch><false/></dontSearch>
-        <sharedText><false/></sharedText>
-        <fixedLineHeight><false/></fixedLineHeight>
-        <autoTab><false/></autoTab>
-        <lockText><false/></lockText>
         <style>standard</style>
-        <autoSelect><false/></autoSelect>
-        <showLines><false/></showLines>
-        <wideMargins><false/></wideMargins>
-        <multipleLines><false/></multipleLines>
-        <cursor>128</cursor>
-        <hasHorizontalScroller><false/></hasHorizontalScroller>
-        <hasVerticalScroller><false/></hasVerticalScroller>
-        <hasColumnHeaders><false/></hasColumnHeaders>
+        <showName><true/></showName>
+        <autoHighlight><true/></autoHighlight>
+        <sharedHighlight><false/></sharedHighlight>
+        <family>0</family>
+        <titleWidth>0</titleWidth>
+        <icon>0</icon>
+        <cursor>0</cursor>
         <textAlign>default</textAlign>
         <font></font>
         <textSize>12</textSize>
         <textStyle>plain</textStyle>
-        <textHeight>0</textHeight>
-        <name></name>
-        <script></script>
+        <name>Pointer</name>
+        <script>on mouseUp
+	set the tool of the mainStack to pointer
+end mouseUp</script>
     </part>
-    <content>
-        <layer>card</layer>
+    <part>
+        <id>2</id>
+        <type>button</type>
+        <rect>
+            <left>20</left>
+            <top>88</top>
+            <right>147</right>
+            <bottom>113</bottom>
+        </rect>
+        <visible><true/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>65535</red>
+            <green>65535</green>
+            <blue>65535</blue>
+            <alpha>65535</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>1</lineWidth>
+        <bevelWidth>0</bevelWidth>
+        <bevelAngle>0</bevelAngle>
+        <style>standard</style>
+        <showName><true/></showName>
+        <autoHighlight><true/></autoHighlight>
+        <sharedHighlight><false/></sharedHighlight>
+        <family>0</family>
+        <titleWidth>0</titleWidth>
+        <icon>0</icon>
+        <cursor>0</cursor>
+        <textAlign>default</textAlign>
+        <font></font>
+        <textSize>12</textSize>
+        <textStyle>plain</textStyle>
+        <name>Edit Text</name>
+        <script>on mouseUp
+	set the tool of the mainStack to edit text
+end mouseUp</script>
+    </part>
+    <part>
+        <id>3</id>
+        <type>button</type>
+        <rect>
+            <left>20</left>
+            <top>122</top>
+            <right>147</right>
+            <bottom>147</bottom>
+        </rect>
+        <visible><true/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>65535</red>
+            <green>65535</green>
+            <blue>65535</blue>
+            <alpha>65535</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>1</lineWidth>
+        <bevelWidth>0</bevelWidth>
+        <bevelAngle>0</bevelAngle>
+        <style>standard</style>
+        <showName><true/></showName>
+        <autoHighlight><true/></autoHighlight>
+        <sharedHighlight><false/></sharedHighlight>
+        <family>0</family>
+        <titleWidth>0</titleWidth>
+        <icon>0</icon>
+        <cursor>0</cursor>
+        <textAlign>default</textAlign>
+        <font></font>
+        <textSize>12</textSize>
+        <textStyle>plain</textStyle>
+        <name>Oval</name>
+        <script>on mouseUp
+	set the tool of the mainStack to oval
+end mouseUp</script>
+    </part>
+    <part>
+        <id>4</id>
+        <type>button</type>
+        <rect>
+            <left>20</left>
+            <top>157</top>
+            <right>147</right>
+            <bottom>182</bottom>
+        </rect>
+        <visible><true/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>65535</red>
+            <green>65535</green>
+            <blue>65535</blue>
+            <alpha>65535</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>1</lineWidth>
+        <bevelWidth>0</bevelWidth>
+        <bevelAngle>0</bevelAngle>
+        <style>standard</style>
+        <showName><true/></showName>
+        <autoHighlight><true/></autoHighlight>
+        <sharedHighlight><false/></sharedHighlight>
+        <family>0</family>
+        <titleWidth>0</titleWidth>
+        <icon>0</icon>
+        <cursor>0</cursor>
+        <textAlign>default</textAlign>
+        <font></font>
+        <textSize>12</textSize>
+        <textStyle>plain</textStyle>
+        <name>Rectangle</name>
+        <script>on mouseUp
+	set the tool of the mainStack to rectangle
+end mouseUp</script>
+    </part>
+    <part>
+        <id>5</id>
+        <type>button</type>
+        <rect>
+            <left>20</left>
+            <top>191</top>
+            <right>147</right>
+            <bottom>216</bottom>
+        </rect>
+        <visible><true/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>65535</red>
+            <green>65535</green>
+            <blue>65535</blue>
+            <alpha>65535</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>1</lineWidth>
+        <bevelWidth>0</bevelWidth>
+        <bevelAngle>0</bevelAngle>
+        <style>standard</style>
+        <showName><true/></showName>
+        <autoHighlight><true/></autoHighlight>
+        <sharedHighlight><false/></sharedHighlight>
+        <family>0</family>
+        <titleWidth>0</titleWidth>
+        <icon>0</icon>
+        <cursor>0</cursor>
+        <textAlign>default</textAlign>
+        <font></font>
+        <textSize>12</textSize>
+        <textStyle>plain</textStyle>
+        <name>Rounded Rectangle</name>
+        <script>on mouseUp
+	set the tool of the mainStack to rounded rectangle
+end mouseUp</script>
+    </part>
+    <part>
         <id>6</id>
-    </content>
+        <type>button</type>
+        <rect>
+            <left>21</left>
+            <top>225</top>
+            <right>148</right>
+            <bottom>250</bottom>
+        </rect>
+        <visible><true/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>65535</red>
+            <green>65535</green>
+            <blue>65535</blue>
+            <alpha>65535</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>1</lineWidth>
+        <bevelWidth>0</bevelWidth>
+        <bevelAngle>0</bevelAngle>
+        <style>standard</style>
+        <showName><true/></showName>
+        <autoHighlight><true/></autoHighlight>
+        <sharedHighlight><false/></sharedHighlight>
+        <family>0</family>
+        <titleWidth>0</titleWidth>
+        <icon>0</icon>
+        <cursor>0</cursor>
+        <textAlign>default</textAlign>
+        <font></font>
+        <textSize>12</textSize>
+        <textStyle>plain</textStyle>
+        <name>Line</name>
+        <script>on mouseUp
+	set the tool of the mainStack to line
+end mouseUp</script>
+    </part>
+    <part>
+        <id>7</id>
+        <type>button</type>
+        <rect>
+            <left>20</left>
+            <top>260</top>
+            <right>147</right>
+            <bottom>285</bottom>
+        </rect>
+        <visible><true/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>65535</red>
+            <green>65535</green>
+            <blue>65535</blue>
+            <alpha>65535</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>1</lineWidth>
+        <bevelWidth>0</bevelWidth>
+        <bevelAngle>0</bevelAngle>
+        <style>standard</style>
+        <showName><true/></showName>
+        <autoHighlight><true/></autoHighlight>
+        <sharedHighlight><false/></sharedHighlight>
+        <family>0</family>
+        <titleWidth>0</titleWidth>
+        <icon>0</icon>
+        <cursor>0</cursor>
+        <textAlign>default</textAlign>
+        <font></font>
+        <textSize>12</textSize>
+        <textStyle>plain</textStyle>
+        <name>Bezier Path</name>
+        <script>on mouseUp
+	set the tool of the mainStack to bezier path
+end mouseUp</script>
+    </part>
     <name></name>
-    <script>--on doMenu itemName
---	put "Card received doMenu" &amp;&amp; quote &amp; itemName &amp; quote
---	pass doMenu itemName
---end doMenu
-
-on doTheUndoThing
-	answer quote &amp; "Undo" &amp; quote &amp;&amp; "menu item chosen!"
-end doTheUndoThing
-
-on doFoo
-	answer quote &amp; "Foo" &amp; quote &amp;&amp; "chosen."
-end doFoo
-
-on unitSelectedPropertyChange
-	if unitSelected of the target is true then
-		set the lineWidth of the target to 2
-	else
-		set the lineWidth of the target to 0
-	end if
-end unitSelectedPropertyChange
-
-on mouseDown buttonNumber,firstModifier
-	if the target has property unitSelected then
-		if firstModifier is not shift then
-			repeat with x = 1 to number of card buttons
-			if card button x has property unitSelected then
-				set the unitSelected of card button x to false
-			end if
-			end repeat
-			set the unitSelected of the target to true
-		else
-			set the unitSelected of the target to (not the unitSelected of the target)
-		end if
-	else
-		show bg grc "selectionRectangle"
-			repeat with x = 1 to number of card buttons
-			if cd btn x has property unitSelected then
-				set the unitSelected of card button x to false
-			end if
-			end repeat
-			set rectangle of bg grc "selectionRectangle" to "left:" &amp; horizontal of the mouseLoc &amp; return &amp; "top:" &amp; vertical of the mouseLoc &amp;return&amp; "right:" &amp; horizontal of the mouseLoc &amp;return&amp; "bottom:" &amp; vertical of the mouseLoc
-		end if
-	end mouseDown
-	
-	on mouseDrag
-		set rectangle of bg grc "selectionRectangle" to "left:" &amp; left of the rectangle of bg grc "selectionRectangle" &amp; return &amp; "top:" &amp; top of the rectangle of bg grc "selectionRectangle" &amp;return&amp; "right:" &amp; horizontal of the mouseLoc &amp;return&amp; "bottom:" &amp; vertical of the mouseLoc
-	end mouseDrag
-	
-	on mouseUp
-		if the visible of bg grc "selectionRectangle" is true then
-			repeat with x = 1 to number of card buttons
-			if cd btn x has property unitSelected then
-				if the rectangle of cd btn x intersects the rectangle of bg grc "selectionRectangle" then
-					set the unitSelected of card button x to true
-				end if
-			end if
-			end repeat
-			hide bg grc "selectionRectangle"
-		end if
-	end mouseUp
-	
-	on mouseUpOutside
-		hide bg grc "selectionRectangle"
-	end mouseUpOutside</script>
+    <script></script>
 </card>

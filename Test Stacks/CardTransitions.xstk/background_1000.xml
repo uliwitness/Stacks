@@ -44,7 +44,6 @@
         <lineWidth>0</lineWidth>
         <bevelWidth>0</bevelWidth>
         <bevelAngle>0</bevelAngle>
-        <toolTip></toolTip>
         <style>rectangle</style>
         <showName><false/></showName>
         <autoHighlight><true/></autoHighlight>
@@ -106,7 +105,6 @@ end mouseUp</script>
         <lineWidth>0</lineWidth>
         <bevelWidth>0</bevelWidth>
         <bevelAngle>0</bevelAngle>
-        <toolTip></toolTip>
         <style>rectangle</style>
         <showName><false/></showName>
         <autoHighlight><true/></autoHighlight>
@@ -165,7 +163,6 @@ end mouseUp</script>
         <lineWidth>0</lineWidth>
         <bevelWidth>0</bevelWidth>
         <bevelAngle>0</bevelAngle>
-        <toolTip></toolTip>
         <style>rectangle</style>
         <showName><false/></showName>
         <autoHighlight><true/></autoHighlight>
@@ -225,7 +222,6 @@ end mouseUp</script>
         <lineWidth>0</lineWidth>
         <bevelWidth>0</bevelWidth>
         <bevelAngle>0</bevelAngle>
-        <toolTip></toolTip>
         <style>rectangle</style>
         <showName><false/></showName>
         <autoHighlight><true/></autoHighlight>
@@ -282,7 +278,6 @@ end mouseUp</script>
         <lineWidth>1</lineWidth>
         <bevelWidth>0</bevelWidth>
         <bevelAngle>0</bevelAngle>
-        <toolTip></toolTip>
         <style>popup</style>
         <showName><true/></showName>
         <highlight><false/></highlight>

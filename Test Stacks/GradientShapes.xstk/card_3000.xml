@@ -4102,10 +4102,10 @@ end mouseDoubleClick</script>
 end mouseUp</script>
         <userProperties>
             <name>rememberedrect</name>
-            <value>left:375
-top:157
-right:887
-bottom:499</value>
+            <value>left:23
+top:437
+right:535
+bottom:779</value>
         </userProperties>
     </part>
     <part>
@@ -4225,10 +4225,10 @@ end mouseUp</script>
     <content>
         <layer>card</layer>
         <id>4</id>
-        <text>left:375
-top:157
-right:887
-bottom:499</text>
+        <text>left:341
+top:153
+right:853
+bottom:495</text>
     </content>
     <content>
         <layer>card</layer>

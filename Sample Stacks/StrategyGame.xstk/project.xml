@@ -40,7 +40,6 @@ end menuBarHeightChange</script>
             <id>4</id>
             <name>Close</name>
             <commandChar>W</commandChar>
-            <message></message>
             <script>on doMenu itemName
 	put "Item got doMenu:" &amp;&amp; itemName
 end doMenu</script>
@@ -60,6 +59,11 @@ end doMenu</script>
             <id>100</id>
             <name>Undo</name>
             <message>doTheUndoThing</message>
+        </item>
+        <item>
+            <id>101</id>
+            <name>Foo</name>
+            <message>doFoo</message>
         </item>
     </menu>
 </project>
