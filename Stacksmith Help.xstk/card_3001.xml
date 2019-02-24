@@ -7,13 +7,19 @@
     <showPict><true/></showPict>
     <dontSearch><false/></dontSearch>
     <owner>1000</owner>
+    <link rel="stylesheet" type="text/css" href="stylesheet_card_3001.css"/>
     <content>
         <layer>background</layer>
         <id>0</id>
+        <text><span class="style1">write to file</span></text>
     </content>
     <content>
         <layer>background</layer>
         <id>1</id>
+        <text><span class="style2">write "Whatever you want" to file "/Users/daniel/Filename.txt"
+
+write </span><span class="style3">expression</span><span class="style4"> to file </span><span class="style5">filePath</span><span class="style6">
+Writes the given expression </span><span class="style7">expression</span><span class="style8"> to the file at the specified path </span><span class="style9">filePath</span><span class="style10">. Text is written out in the UTF-8 string encoding, binary data (like NUL characters) are written out as-is.</span></text>
     </content>
     <name></name>
     <script></script>

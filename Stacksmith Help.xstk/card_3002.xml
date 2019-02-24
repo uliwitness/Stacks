@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE card PUBLIC "-//Apple, Inc.//DTD card V 2.0//EN" "">
+<card>
+    <id>3002</id>
+    <bitmap></bitmap>
+    <cantDelete><false/></cantDelete>
+    <showPict><true/></showPict>
+    <dontSearch><false/></dontSearch>
+    <owner>1000</owner>
+    <content>
+        <layer>background</layer>
+        <id>0</id>
+    </content>
+    <content>
+        <layer>background</layer>
+        <id>1</id>
+    </content>
+    <name></name>
+    <script></script>
+</card>
