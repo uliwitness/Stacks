@@ -23,7 +23,7 @@
 			put x into commandName
 		end if
 		put «&lt;a href="» &amp; commandName &amp; «.html"&gt;» &amp; commandName &amp; «&lt;/a&gt;» &amp; newline after navLinks
-		output "Listing page" &amp;&amp; x &amp;&amp; "of" &amp;&amp; numCards
+		put "Listing page" &amp;&amp; x &amp;&amp; "of" &amp;&amp; numCards
 	end repeat
 	
 	put navLinks after indexPage
@@ -36,11 +36,11 @@
 			put x into commandName
 		end if
 		put "/Users/uli/Programming/Stacksmith/docs/hammer/" &amp; commandName &amp; ".html" into filePath
-		output "Generating page" &amp;&amp; x &amp;&amp; "of" &amp;&amp; numCards &amp;&amp; "at" &amp;&amp; filePath
+		put "Generating page" &amp;&amp; x &amp;&amp; "of" &amp;&amp; numCards &amp;&amp; "at" &amp;&amp; filePath
 		write the long htmlText of bg fld "Description" to file filePath
 	end repeat
 	
-	output "Done."
+	put "Done."
 end generateWebsite</script>
     <media>
         <id>144</id>
