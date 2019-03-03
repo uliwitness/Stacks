@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE stack PUBLIC "-//Apple, Inc.//DTD stack V 2.0//EN" "">
+<stack>
+    <id>1</id>
+    <name>NativeCalls</name>
+    <style>document</style>
+    <cardCount>1</cardCount>
+    <cantModify><false/></cantModify>
+    <cantDelete><false/></cantDelete>
+    <cantAbort><false/></cantAbort>
+    <privateAccess><false/></privateAccess>
+    <cantPeek><false/></cantPeek>
+    <cardSize>
+        <width>512</width>
+        <height>342</height>
+    </cardSize>
+    <position>
+        <left>451</left>
+        <top>140</top>
+    </position>
+    <script></script>
+    <background id="1000" file="background_1000.xml" name=""/>
+    <card id="3000" file="card_3000.xml" name="" owner="1000"/>
+</stack>
