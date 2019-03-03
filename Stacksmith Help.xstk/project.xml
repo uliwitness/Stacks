@@ -14,6 +14,9 @@
 		repeat with x = 1 to the number of cards of stack "Stacksmith Help"
 		go to card x of stack "Stacksmith Help"
 		put bg fld "Title" into commandName
+		if commandName is empty then
+			put x into commandName
+		end if
 		put "/Users/uli/Programming/Stacksmith/docs/hammer/" &amp; commandName &amp; ".html" into filePath
 		put "Generating page" &amp;&amp; x &amp;&amp; "of" &amp;&amp; numCards &amp;&amp; "at" &amp;&amp; filePath
 		write the long htmlText of bg fld "Description" to file filePath

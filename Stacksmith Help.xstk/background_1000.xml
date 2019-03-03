@@ -506,78 +506,77 @@ end mouseUp</script>
     <content>
         <layer>background</layer>
         <id>1</id>
-        <text><span class="style2">download "http://the-ageless.com" to cd fld 1
+        <text><span class="style1">download "http://the-ageless.com" to cd fld 1
 	for each chunk put "downloading"
 	when done answer "download finished"
 
-	download internetAddress to globalContainerThis command starts a download of the contents of the URL given in internetAddress and, as the data arrives over the network, progressively writes it into the container given in globalContainer</span><span class="style3">. The download happens in the background, while other scripts continue executing, as such the container given must be one that exists beyond the duration of the current handler, like a global variable or a text field.
+	download internetAddress to globalContainerThis command starts a download of the contents of the URL given in internetAddress and, as the data arrives over the network, progressively writes it into the container given in globalContainer. The download happens in the background, while other scripts continue executing, as such the container given must be one that exists beyond the duration of the current handler, like a global variable or a text field.
 If you need to do something with the downloaded data besides displaying it in a text field, you can ask to be notified on completion in the following form:
-</span><span class="style4">download </span><span class="style5">internetAddress</span><span class="style6"> to </span><span class="style7">globalContainer</span><span class="style8"> when done </span><span class="style9">command</span><span class="style10">or
+download </span><span class="style1">internetAddress</span><span class="style1"> to </span><span class="style1">globalContainer</span><span class="style1"> when done </span><span class="style1">command</span><span class="style1">or
 
-	</span><span class="style11">download </span><span class="style12">internetAddress</span><span class="style13"> to </span><span class="style14">globalContainer</span><span class="style15">
-		when done </span><span class="style16">command</span><span class="style17">
+	</span><span class="style1">download </span><span class="style1">internetAddress</span><span class="style1"> to </span><span class="style1">globalContainer</span><span class="style1">
+		when done </span><span class="style1">command</span><span class="style1">
 
 or
 
-	</span><span class="style18">download </span><span class="style19">internetAddress</span><span class="style20"> to </span><span class="style21">globalContainer</span><span class="style22">
+	</span><span class="style1">download </span><span class="style1">internetAddress</span><span class="style1"> to </span><span class="style1">globalContainer</span><span class="style1">
 	when done
-		</span><span class="style23">commands</span><span class="style24">
-	end download</span><span class="style25">
+		</span><span class="style1">commands</span><span class="style1">
+	end download</span><span class="style1">
 or
 
-	</span><span class="style26">download </span><span class="style27">internetAddress</span><span class="style28"> to </span><span class="style29">globalContainer</span><span class="style30"> when done
-		</span><span class="style31">commands</span><span class="style32">
-	end download</span><span class="style33">
+	</span><span class="style1">download </span><span class="style1">internetAddress</span><span class="style1"> to </span><span class="style1">globalContainer</span><span class="style1"> when done
+		</span><span class="style1">commands</span><span class="style1">
+	end download</span><span class="style1">
 
 Similarly, you can also be notified of the arrival of each new chunk of data, as it is transferred over the network:
 
-	</span><span class="style34">download </span><span class="style35">internetAddress</span><span class="style36"> to </span><span class="style37">globalContainer</span><span class="style38"> for each chunk </span><span class="style39">command</span><span class="style40">
+	</span><span class="style1">download </span><span class="style1">internetAddress</span><span class="style1"> to </span><span class="style1">globalContainer</span><span class="style1"> for each chunk </span><span class="style1">command</span><span class="style1">
 or
 
-	</span><span class="style41">download </span><span class="style42">internetAddress</span><span class="style43"> to </span><span class="style44">globalContainer</span><span class="style45">
-	for each chunk </span><span class="style46">command</span><span class="style47">
+	</span><span class="style1">download </span><span class="style1">internetAddress</span><span class="style1"> to </span><span class="style1">globalContainer</span><span class="style1">
+	for each chunk </span><span class="style1">command</span><span class="style1">
 or
 
-	</span><span class="style48">download </span><span class="style49">internetAddress</span><span class="style50"> to </span><span class="style51">globalContainer</span><span class="style52">
+	</span><span class="style1">download </span><span class="style1">internetAddress</span><span class="style1"> to </span><span class="style1">globalContainer</span><span class="style1">
 	for each chunk
-		</span><span class="style53">commands</span><span class="style54">
-	end download</span><span class="style55">
+		</span><span class="style1">commands</span><span class="style1">
+	end download</span><span class="style1">
 or
 
-	</span><span class="style56">download </span><span class="style57">internetAddress</span><span class="style58"> to </span><span class="style59">globalContainer</span><span class="style60"> for each chunk
-		</span><span class="style61">commands</span><span class="style62">
-	end download</span><span class="style63">
+	</span><span class="style1">download </span><span class="style1">internetAddress</span><span class="style1"> to </span><span class="style1">globalContainer</span><span class="style1"> for each chunk
+		</span><span class="style1">commands</span><span class="style1">
+	end download</span><span class="style1">
 
 You can also combine both forms to be notified of each time new data arrives, and when the download has completed:
 
-	</span><span class="style64">download </span><span class="style65">internetAddress</span><span class="style66"> to </span><span class="style67">globalContainer</span><span class="style68">
+	</span><span class="style1">download </span><span class="style1">internetAddress</span><span class="style1"> to </span><span class="style1">globalContainer</span><span class="style1">
 	for each chunk
-		</span><span class="style69">commands
+		</span><span class="style1">commands
 	when done
-		</span><span class="style70">commands
-	end download</span><span class="style71">
+		</span><span class="style1">commands
+	end download</span><span class="style1">
 
 etc.
 
-</span><span class="style72">the download
-</span><span class="style73">the download
+</span><span class="style1">the download
+</span><span class="style1">the download
 	the totalSize of the download
-	element "User-Agent" of the headers of the download</span><span class="style74">
+	element "User-Agent" of the headers of the download</span><span class="style1">
 
 Additional information on a download that is in progress is available to code inside the for each chunk or when done sections through the the download array. Currently, it contains the following keys:
 
-</span><span class="style75">totalSize</span><span class="style76">			The size the download will have when finished, in bytes. May be -1 to indicate we won’t know until the download has finished</span><span class="style77">.
-si</span><span class="style78">ze				The amount of data downloaded so far, in bytes</span><span class="style79">.
-statusCo</span><span class="style80">de		The HTTP status code the web server returned, like 200 for success, or 404 for ‘file not foun</span><span class="style81">d’.
-statusM</span><span class="style82">essage	A plain-text description of the statusCode, if avail</span><span class="style83">able.
-a</span><span class="style84">ddress			The URL of the file downloaded. This is the same as the internetAddress you gave to the download com</span><span class="style85">mand.
-h</span><span class="style86">eaders			An array containing the headers in the reply from the server, with the header name as the key, and the header value is the value associated with tha</span>t key.</text>
+</span><span class="style1">totalSize</span><span class="style1">			The size the download will have when finished, in bytes. May be -1 to indicate we won’t know until the download has finished</span><span class="style1">.
+si</span><span class="style1">ze				The amount of data downloaded so far, in bytes</span><span class="style1">.
+statusCo</span><span class="style1">de		The HTTP status code the web server returned, like 200 for success, or 404 for ‘file not foun</span><span class="style1">d’.
+statusM</span><span class="style1">essage	A plain-text description of the statusCode, if avail</span><span class="style1">able.
+a</span><span class="style1">ddress			The URL of the file downloaded. This is the same as the internetAddress you gave to the download com</span><span class="style1">mand.
+h</span><span class="style1">eaders			An array containing the headers in the reply from the server, with the header name as the key, and the header value is the value associated with tha</span>t key.</text>
     </content>
     <content>
         <layer>background</layer>
         <id>8</id>
-        <text><span class="style87">Stacksmith Help</span><span class="style88">
-</span><span class="style89">
+        <text><span class="style2">Stacksmith Help</span><span class="style3">
 This is the documentation for Stacksmith's programming language, Hammer. Currently, this is only a syntax reference intended to describe all commands that have been implemented for the people creating Stacksmith.
 
 Later, we will hopefully improve this documentation to make fewer assumptions about scripters' background knowledge,  </span></text>
