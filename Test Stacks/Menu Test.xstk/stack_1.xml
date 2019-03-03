@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE stack PUBLIC "-//Apple, Inc.//DTD stack V 2.0//EN" "">
+<stack>
+    <id>1</id>
+    <name>Menu Test</name>
+    <documentURL></documentURL>
+    <style>document</style>
+    <cardCount>1</cardCount>
+    <cantModify><false/></cantModify>
+    <cantDelete><false/></cantDelete>
+    <cantAbort><false/></cantAbort>
+    <privateAccess><false/></privateAccess>
+    <cantPeek><false/></cantPeek>
+    <cardSize>
+        <width>512</width>
+        <height>342</height>
+    </cardSize>
+    <position>
+        <left>110</left>
+        <top>261</top>
+    </position>
+    <script></script>
+    <background id="1000" file="background_1000.xml" name=""/>
+    <card id="3000" file="card_3000.xml" name="" owner="1000"/>
+</stack>

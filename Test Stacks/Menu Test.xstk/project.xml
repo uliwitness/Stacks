@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE project PUBLIC "-//Apple, Inc.//DTD project V 2.0//EN" "">
+<project>
+    <userLevel>5</userLevel>
+    <privateAccess><false/></privateAccess>
+    <cantPeek><false/></cantPeek>
+    <createdByVersion>Stacksmith 1.0a11 (1619)</createdByVersion>
+    <lastCompactedVersion>Stacksmith 1.0a11 (1619)</lastCompactedVersion>
+    <firstEditedVersion>Stacksmith 1.0a11 (1619)</firstEditedVersion>
+    <lastEditedVersion>Stacksmith 1.0a11 (1619)</lastEditedVersion>
+    <stack id="1" file="stack_1.xml" name="Menu Test" thumbnail="stack_1.jpg"/>
+    <menu>
+        <id>100</id>
+        <name>File</name>
+        <item>
+            <id>100</id>
+            <name>New Document</name>
+            <commandChar>n</commandChar>
+        </item>
+        <item>
+            <id>101</id>
+            <name>Open Document…</name>
+            <commandChar>o</commandChar>
+        </item>
+        <item>
+            <id>102</id>
+            <name>-</name>
+            <style>separator</style>
+        </item>
+        <item>
+            <id>103</id>
+            <name>Close Window</name>
+            <commandChar>w</commandChar>
+        </item>
+        <item>
+            <id>104</id>
+            <name>Save</name>
+            <commandChar>s</commandChar>
+        </item>
+    </menu>
+    <menu>
+        <id>101</id>
+        <name>Edit</name>
+        <item>
+            <id>100</id>
+            <name>Undo</name>
+            <commandChar>z</commandChar>
+        </item>
+        <item>
+            <id>101</id>
+            <name>Redo</name>
+            <commandChar>Z</commandChar>
+        </item>
+        <item>
+            <id>102</id>
+            <name>-</name>
+            <style>separator</style>
+        </item>
+        <item>
+            <id>103</id>
+            <name>Cut</name>
+            <commandChar>x</commandChar>
+        </item>
+        <item>
+            <id>104</id>
+            <name>Copy</name>
+            <commandChar>c</commandChar>
+        </item>
+        <item>
+            <id>105</id>
+            <name>Paste</name>
+            <commandChar>v</commandChar>
+        </item>
+        <item>
+            <id>106</id>
+            <name>Delete</name>
+        </item>
+        <item>
+            <id>107</id>
+            <name>-</name>
+            <style>separator</style>
+        </item>
+        <item>
+            <id>108</id>
+            <name>Select All</name>
+            <commandChar>a</commandChar>
+        </item>
+        <item>
+            <id>109</id>
+            <name>Deselect All</name>
+            <commandChar>A</commandChar>
+        </item>
+    </menu>
+</project>
