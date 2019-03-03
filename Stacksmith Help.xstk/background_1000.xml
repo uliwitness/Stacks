@@ -106,9 +106,9 @@
         <hasVerticalScroller><false/></hasVerticalScroller>
         <hasColumnHeaders><false/></hasColumnHeaders>
         <textAlign>default</textAlign>
-        <font></font>
-        <textSize>12</textSize>
-        <textStyle>plain</textStyle>
+        <font>Futura</font>
+        <textSize>18</textSize>
+        <textStyle>bold</textStyle>
         <textHeight>0</textHeight>
         <name>Title</name>
         <script></script>
@@ -170,8 +170,8 @@
         <hasVerticalScroller><true/></hasVerticalScroller>
         <hasColumnHeaders><false/></hasColumnHeaders>
         <textAlign>default</textAlign>
-        <font></font>
-        <textSize>12</textSize>
+        <font>Arial</font>
+        <textSize>13</textSize>
         <textStyle>plain</textStyle>
         <textHeight>0</textHeight>
         <name>Description</name>
@@ -512,7 +512,7 @@ end mouseUp</script>
 
 	download internetAddress to globalContainerThis command starts a download of the contents of the URL given in internetAddress and, as the data arrives over the network, progressively writes it into the container given in globalContainer. The download happens in the background, while other scripts continue executing, as such the container given must be one that exists beyond the duration of the current handler, like a global variable or a text field.
 If you need to do something with the downloaded data besides displaying it in a text field, you can ask to be notified on completion in the following form:
-download internetAddress</span><span class="style1"> to </span><span class="style1">globalContainer</span><span class="style1"> when done </span><span class="style1">command</span><span class="style1">or
+download internetAddress to globalContainer</span><span class="style1"> when done </span><span class="style1">command</span><span class="style1">or
 
 	</span><span class="style1">download </span><span class="style1">internetAddress</span><span class="style1"> to </span><span class="style1">globalContainer</span><span class="style1">
 		when done </span><span class="style1">command</span><span class="style1">

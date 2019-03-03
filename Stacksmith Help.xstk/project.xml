@@ -11,21 +11,37 @@
     <script>on generateWebsite
 	put "&lt;html&gt;&lt;head&gt;&lt;style&gt;body { white-space: pre-wrap; }&lt;/style&gt;&lt;title&gt;Hammer Language Reference&lt;/title&gt;&lt;/head&gt;" &amp; newline into indexPage 
 	put "&lt;body&gt;" &amp; the htmlText of bg fld "Overview" &amp; newline after indexPage
+	
+	put "" into navLinks
+	
 	put the number of cards of stack "Stacksmith Help" into numCards
-		repeat with x = 1 to the number of cards of stack "Stacksmith Help"
+	
+	repeat with x = 1 to the number of cards of stack "Stacksmith Help"
+		go to card x of stack "Stacksmith Help"
+		put bg fld "Title" into commandName
+		if commandName is empty then
+			put x into commandName
+		end if
+		put «&lt;a href="» &amp; commandName &amp; «.html"&gt;» &amp; commandName &amp; «&lt;/a&gt;» &amp; newline after navLinks
+		output "Listing page" &amp;&amp; x &amp;&amp; "of" &amp;&amp; numCards
+	end repeat
+	
+	put navLinks after indexPage
+	put "&lt;/body&gt;" after indexPage
+	write indexPage to file "/Users/uli/Programming/Stacksmith/docs/hammer/index.html"	
+	repeat with x = 1 to the number of cards of stack "Stacksmith Help"
 		go to card x of stack "Stacksmith Help"
 		put bg fld "Title" into commandName
 		if commandName is empty then
 			put x into commandName
 		end if
 		put "/Users/uli/Programming/Stacksmith/docs/hammer/" &amp; commandName &amp; ".html" into filePath
-		put "Generating page" &amp;&amp; x &amp;&amp; "of" &amp;&amp; numCards &amp;&amp; "at" &amp;&amp; filePath
+		output "Generating page" &amp;&amp; x &amp;&amp; "of" &amp;&amp; numCards &amp;&amp; "at" &amp;&amp; filePath
 		write the long htmlText of bg fld "Description" to file filePath
-		put «&lt;a href="» &amp; commandName &amp; «.html"&gt;» &amp; commandName &amp; «&lt;/a&gt;» &amp; newline after indexPage
-		end repeat
-		put "&lt;/body&gt;" after indexPage
-		write indexPage to file "/Users/uli/Programming/Stacksmith/docs/hammer/index.html"
-	end generateWebsite</script>
+	end repeat
+	
+	output "Done."
+end generateWebsite</script>
     <media>
         <id>144</id>
         <name>XL Prev Arrow</name>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE card PUBLIC "-//Apple, Inc.//DTD card V 2.0//EN" "">
+<card>
+    <id>3003</id>
+    <bitmap></bitmap>
+    <cantDelete><false/></cantDelete>
+    <showPict><true/></showPict>
+    <dontSearch><false/></dontSearch>
+    <owner>1000</owner>
+    <link rel="stylesheet" type="text/css" href="stylesheet_card_3003.css"/>
+    <content>
+        <layer>background</layer>
+        <id>0</id>
+        <text><span class="style1">repeat with</span></text>
+    </content>
+    <content>
+        <layer>background</layer>
+        <id>1</id>
+        <text><span class="style2">repeat with x from 1 to 100
+  output x
+end repeat
+
+repeat with cardNumber from number of cards down to 1
+  go to card cardNumber
+end repeat
+</span><span class="style3">
+repeat with </span><span class="style4">variableName</span><span class="style5"> from </span><span class="style6">startNumber</span><span class="style7"> [down] to </span><span class="style8">endNumber</span><span class="style9">
+  </span><span class="style10">commands</span><span class="style11">
+end repeat
+</span><span class="style12">
+Count the variable with the given name up/down by adding/subtracting 1, starting at the given number and stopping once the variable has the end number and run the given commands for each number (including startNumber and endNumber).</span></text>
+    </content>
+    <name></name>
+    <script></script>
+</card>
