@@ -512,7 +512,7 @@ end mouseUp</script>
 
 	download internetAddress to globalContainerThis command starts a download of the contents of the URL given in internetAddress and, as the data arrives over the network, progressively writes it into the container given in globalContainer. The download happens in the background, while other scripts continue executing, as such the container given must be one that exists beyond the duration of the current handler, like a global variable or a text field.
 If you need to do something with the downloaded data besides displaying it in a text field, you can ask to be notified on completion in the following form:
-download </span><span class="style1">internetAddress</span><span class="style1"> to </span><span class="style1">globalContainer</span><span class="style1"> when done </span><span class="style1">command</span><span class="style1">or
+download internetAddress</span><span class="style1"> to </span><span class="style1">globalContainer</span><span class="style1"> when done </span><span class="style1">command</span><span class="style1">or
 
 	</span><span class="style1">download </span><span class="style1">internetAddress</span><span class="style1"> to </span><span class="style1">globalContainer</span><span class="style1">
 		when done </span><span class="style1">command</span><span class="style1">
