@@ -25,9 +25,9 @@ repeat with cardNumber from number of cards down to 1
 end repeat
 
 repeat with </span><span class="style3">variableName</span><span class="style4"> from </span><span class="style5">startNumber</span><span class="style6"> [down] to </span><span class="style7">endNumber
-</span><span class="style8">  commands</span><span class="style9">
-</span><span class="style10">end repeat
-</span><span class="style11">
+  commands
+</span><span class="style8">end repeat
+</span><span class="style9">
 Count the variable with the given name up/down by adding/subtracting 1, starting at the given number and stopping once the variable has the end number and run the given commands for each number (including startNumber and endNumber).</span></text>
     </content>
     <name></name>

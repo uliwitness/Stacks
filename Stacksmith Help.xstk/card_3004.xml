@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE card PUBLIC "-//Apple, Inc.//DTD card V 2.0//EN" "">
+<card>
+    <id>3004</id>
+    <bitmap></bitmap>
+    <cantDelete><false/></cantDelete>
+    <showPict><true/></showPict>
+    <dontSearch><false/></dontSearch>
+    <owner>1000</owner>
+    <link rel="stylesheet" type="text/css" href="stylesheet_card_3004.css"/>
+    <content>
+        <layer>background</layer>
+        <id>0</id>
+        <text><span class="style1">repeat for</span></text>
+    </content>
+    <content>
+        <layer>background</layer>
+        <id>1</id>
+        <text><span class="style2">repeat for 3 times
+	put "Go!" after card field "Instructions"
+end repeat
+
+repeat [for] </span><span class="style3">count</span><span class="style4"> [times]
+	</span><span class="style5">commands</span><span class="style6">
+end repeat
+</span><span class="style7">
+Execute the given commands </span><span class="style8">count</span><span class="style9"> times.</span></text>
+    </content>
+    <name></name>
+    <script></script>
+</card>

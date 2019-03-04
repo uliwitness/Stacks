@@ -16,10 +16,8 @@
     <content>
         <layer>background</layer>
         <id>1</id>
-        <text><span class="style2">read from file "/Users/daniel/TextFile.txt"</span><span class="style3">
+        <text><span class="style2">read from file "/Users/daniel/TextFile.txt"read from file </span><span class="style3">filePath
 </span><span class="style4">
-</span><span class="style5">read from file </span><span class="style6">filePath</span><span class="style7">
-</span><span class="style8">
 Read the contents from the given file (if it is a text file, it is assumed that the file is encoded in UTF-8) and put them into the local variable "it".</span></text>
     </content>
     <name></name>

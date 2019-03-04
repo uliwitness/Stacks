@@ -11,11 +11,15 @@
 }
 .style3
 {
-	font-family: Courier;
-	font-size: 12;
-	font-style: italic;
+	font-family: Arial;
+	font-size: 13;
 }
 .style4
+{
+	font-family: Courier;
+	font-size: 12;
+}
+.style5
 {
 	font-family: Arial;
 	font-size: 13;

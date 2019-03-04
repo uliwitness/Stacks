@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE card PUBLIC "-//Apple, Inc.//DTD card V 2.0//EN" "">
+<card>
+    <id>3005</id>
+    <bitmap></bitmap>
+    <cantDelete><false/></cantDelete>
+    <showPict><true/></showPict>
+    <dontSearch><false/></dontSearch>
+    <owner>1000</owner>
+    <link rel="stylesheet" type="text/css" href="stylesheet_card_3005.css"/>
+    <content>
+        <layer>background</layer>
+        <id>0</id>
+        <text><span class="style1">repeat for each</span></text>
+    </content>
+    <content>
+        <layer>background</layer>
+        <id>1</id>
+        <text><span class="style2">repeat for each line theLine of myText
+	put "(" &amp; theLine &amp; ")" after myBracketedText
+end repeat
+
+repeat for each chunkType counterVariable of chunkableVariable
+	commands
+end repeat
+</span><span class="style3">
+Break up the given variable chunkableVariable into the specified chunks (byte, character, word, item, line) and then repeat the given commands for each of them, setting the counter variable given to that chunk of the chunkableVariable.
+
+</span><span class="style4">repeat for each entry theItem of myArray
+	put "," &amp;&amp; theItem after listAsText
+end repeat
+
+repeat for each entry counterVariable of arrayVariable
+	commands
+end repeat
+</span><span class="style5">
+For each array entry in the given array, run the given commands once for each of them setting the given local variable counterVariable to that array entry.
+</span></text>
+    </content>
+    <name></name>
+    <script></script>
+</card>
