@@ -8,6 +8,48 @@
     <dontSearch><false/></dontSearch>
     <link rel="stylesheet" type="text/css" href="stylesheet_card_1000.css"/>
     <part>
+        <id>9</id>
+        <type>graphic</type>
+        <pinning><stretchHorizontally/></pinning>
+        <rect>
+            <left>0</left>
+            <top>0</top>
+            <right>0</right>
+            <bottom>70</bottom>
+        </rect>
+        <visible><true/></visible>
+        <enabled><true/></enabled>
+        <fillColor>
+            <red>52428</red>
+            <green>52428</green>
+            <blue>52427</blue>
+            <alpha>65535</alpha>
+        </fillColor>
+        <lineColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>65535</alpha>
+        </lineColor>
+        <shadowColor>
+            <red>0</red>
+            <green>0</green>
+            <blue>0</blue>
+            <alpha>0</alpha>
+        </shadowColor>
+        <shadowOffset>
+            <width>0</width>
+            <height>0</height>
+        </shadowOffset>
+        <shadowBlurRadius>0</shadowBlurRadius>
+        <lineWidth>0</lineWidth>
+        <bevelWidth>0</bevelWidth>
+        <bevelAngle>0</bevelAngle>
+        <style>roundrect</style>
+        <name></name>
+        <script></script>
+    </part>
+    <part>
         <id>6</id>
         <type>graphic</type>
         <pinning>
@@ -195,7 +237,7 @@
         <fillColor>
             <red>52428</red>
             <green>52428</green>
-            <blue>52428</blue>
+            <blue>52427</blue>
             <alpha>65535</alpha>
         </fillColor>
         <lineColor>
@@ -439,11 +481,15 @@ end mouseUp</script>
     <part>
         <id>8</id>
         <type>field</type>
+        <pinning>
+            <stretchHorizontally/>
+            <stretchVertically/>
+        </pinning>
         <rect>
             <left>20</left>
-            <top>19</top>
-            <right>916</right>
-            <bottom>616</bottom>
+            <top>20</top>
+            <right>20</right>
+            <bottom>20</bottom>
         </rect>
         <visible><false/></visible>
         <enabled><true/></enabled>
@@ -512,7 +558,7 @@ end mouseUp</script>
 
 	download internetAddress to globalContainerThis command starts a download of the contents of the URL given in internetAddress and, as the data arrives over the network, progressively writes it into the container given in globalContainer. The download happens in the background, while other scripts continue executing, as such the container given must be one that exists beyond the duration of the current handler, like a global variable or a text field.
 If you need to do something with the downloaded data besides displaying it in a text field, you can ask to be notified on completion in the following form:
-download internetAddress to globalContainer</span><span class="style1"> when done </span><span class="style1">command</span><span class="style1">or
+download internetAddress to globalContainer when done </span><span class="style1">command</span><span class="style1">or
 
 	</span><span class="style1">download </span><span class="style1">internetAddress</span><span class="style1"> to </span><span class="style1">globalContainer</span><span class="style1">
 		when done </span><span class="style1">command</span><span class="style1">

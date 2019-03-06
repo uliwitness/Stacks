@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE card PUBLIC "-//Apple, Inc.//DTD card V 2.0//EN" "">
+<card>
+    <id>3007</id>
+    <bitmap></bitmap>
+    <cantDelete><false/></cantDelete>
+    <showPict><true/></showPict>
+    <dontSearch><false/></dontSearch>
+    <owner>1000</owner>
+    <link rel="stylesheet" type="text/css" href="stylesheet_card_3007.css"/>
+    <content>
+        <layer>background</layer>
+        <id>0</id>
+        <text><span class="style1">start recording sound</span></text>
+    </content>
+    <content>
+        <layer>background</layer>
+        <id>1</id>
+        <text><span class="style2">start recording sound "pan flute"
+</span><span class="style3">
+start recording sound </span><span class="style4">resourceName</span><span class="style5">
+</span><span class="style6">
+stop recording sound
+</span><span class="style7">
+Starts recording audio from the system's default sound input into a media resource with the name </span><span class="style8">resourceName</span><span class="style9"> that will be attached to the current project. </span></text>
+    </content>
+    <name></name>
+    <script></script>
+</card>

@@ -7,7 +7,7 @@
     <createdByVersion>Stacksmith 1.0a11 (1435)</createdByVersion>
     <lastCompactedVersion>Stacksmith 1.0a11 (1435)</lastCompactedVersion>
     <firstEditedVersion>Stacksmith 1.0a11 (1435)</firstEditedVersion>
-    <lastEditedVersion>Stacksmith 1.0a11 (1786)</lastEditedVersion>
+    <lastEditedVersion>Stacksmith 1.0a11 (1789)</lastEditedVersion>
     <script>on generateWebsite
 	put "&lt;html&gt;&lt;head&gt;&lt;style&gt;body { white-space: pre-wrap; }&lt;/style&gt;&lt;title&gt;Hammer Language Reference&lt;/title&gt;&lt;/head&gt;" &amp; newline into indexPage 
 	put "&lt;body&gt;" &amp; the htmlText of bg fld "Overview" &amp; newline after indexPage

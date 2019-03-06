@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE card PUBLIC "-//Apple, Inc.//DTD card V 2.0//EN" "">
+<card>
+    <id>3008</id>
+    <bitmap></bitmap>
+    <cantDelete><false/></cantDelete>
+    <showPict><true/></showPict>
+    <dontSearch><false/></dontSearch>
+    <owner>1000</owner>
+    <link rel="stylesheet" type="text/css" href="stylesheet_card_3008.css"/>
+    <content>
+        <layer>background</layer>
+        <id>0</id>
+        <text><span class="style1">play</span></text>
+    </content>
+    <content>
+        <layer>background</layer>
+        <id>1</id>
+        <text><span class="style2">play boing c e g
+
+play instrument [melody]</span><span class="style3">
+
+Play the sound media </span><span class="style4">instrument</span><span class="style5">, optionally changing its pitch to the given </span><span class="style6">melody</span><span class="style7">. The melody may consist of the notes </span><span class="style8">c d e f g a h c</span><span class="style9">, the key modifiers </span><span class="style10">b</span><span class="style11"> or </span><span class="style12">#</span><span class="style13">, and an octave number between </span><span class="style14">2</span><span class="style15"> and </span><span class="style16">5</span><span class="style17"> (if no octave is specified, it is assumed to be </span><span class="style18">4</span><span class="style19">).</span></text>
+    </content>
+    <name></name>
+    <script></script>
+</card>

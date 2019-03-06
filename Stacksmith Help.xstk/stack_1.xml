@@ -4,7 +4,7 @@
     <id>1</id>
     <name>Stacksmith Help</name>
     <style>standard</style>
-    <cardCount>6</cardCount>
+    <cardCount>10</cardCount>
     <cantModify><false/></cantModify>
     <cantDelete><false/></cantDelete>
     <cantAbort><false/></cantAbort>
@@ -12,12 +12,12 @@
     <cantPeek><false/></cantPeek>
     <resizable><true/></resizable>
     <cardSize>
-        <width>692</width>
-        <height>636</height>
+        <width>741</width>
+        <height>447</height>
     </cardSize>
     <position>
-        <left>125</left>
-        <top>157</top>
+        <left>108</left>
+        <top>326</top>
     </position>
     <script></script>
     <background id="1000" file="background_1000.xml" name=""/>
@@ -27,4 +27,8 @@
     <card id="3003" file="card_3003.xml" name="" owner="1000"/>
     <card id="3004" file="card_3004.xml" name="" owner="1000"/>
     <card id="3005" file="card_3005.xml" name="" owner="1000"/>
+    <card id="3006" file="card_3006.xml" name="" owner="1000"/>
+    <card id="3007" file="card_3007.xml" name="" owner="1000"/>
+    <card id="3008" file="card_3008.xml" name="" owner="1000"/>
+    <card id="3009" file="card_3009.xml" name="" owner="1000"/>
 </stack>

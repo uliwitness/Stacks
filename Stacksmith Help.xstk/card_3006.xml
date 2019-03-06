@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE card PUBLIC "-//Apple, Inc.//DTD card V 2.0//EN" "">
+<card>
+    <id>3006</id>
+    <bitmap></bitmap>
+    <cantDelete><false/></cantDelete>
+    <showPict><true/></showPict>
+    <dontSearch><false/></dontSearch>
+    <owner>1000</owner>
+    <link rel="stylesheet" type="text/css" href="stylesheet_card_3006.css"/>
+    <content>
+        <layer>background</layer>
+        <id>0</id>
+        <text><span class="style1">debug checkpoint</span></text>
+    </content>
+    <content>
+        <layer>background</layer>
+        <id>1</id>
+        <text><span class="style2">debug checkpoint
+</span><span class="style3">
+Make the program pause and open the debugger to this line. This is equivalent to clicking in the gutter to the left of a line in the script editor to set a debug breakpoint.</span></text>
+    </content>
+    <name></name>
+    <script></script>
+</card>
