@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE card PUBLIC "-//Apple, Inc.//DTD card V 2.0//EN" "">
+<card>
+    <id>3010</id>
+    <bitmap></bitmap>
+    <cantDelete><false/></cantDelete>
+    <showPict><true/></showPict>
+    <dontSearch><false/></dontSearch>
+    <owner>1000</owner>
+    <link rel="stylesheet" type="text/css" href="stylesheet_card_3010.css"/>
+    <content>
+        <layer>background</layer>
+        <id>0</id>
+        <text><span class="style1">files in folder</span></text>
+    </content>
+    <content>
+        <layer>background</layer>
+        <id>1</id>
+        <text><span class="style2">put the files in folder "/Users/daniel/Pictures' into myDrawings
+</span><span class="style3">
+</span><span class="style4">put entry 1 of files in folder "/" into firstFile
+</span><span class="style5">
+[the] files in folder </span><span class="style6">folderPath</span><span class="style7">
+</span><span class="style8">
+Returns an array containing the file and folder names in the given folder. Note that these are the computer's internal file names, not localized filenames for display.</span></text>
+    </content>
+    <name></name>
+    <script></script>
+</card>

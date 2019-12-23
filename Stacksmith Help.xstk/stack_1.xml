@@ -4,7 +4,7 @@
     <id>1</id>
     <name>Stacksmith Help</name>
     <style>standard</style>
-    <cardCount>10</cardCount>
+    <cardCount>11</cardCount>
     <cantModify><false/></cantModify>
     <cantDelete><false/></cantDelete>
     <cantAbort><false/></cantAbort>
@@ -24,6 +24,7 @@
     <card id="3000" file="card_3000.xml" name="" owner="1000"/>
     <card id="3001" file="card_3001.xml" name="" owner="1000"/>
     <card id="3002" file="card_3002.xml" name="" owner="1000"/>
+    <card id="3010" file="card_3010.xml" name="" owner="1000"/>
     <card id="3003" file="card_3003.xml" name="" owner="1000"/>
     <card id="3004" file="card_3004.xml" name="" owner="1000"/>
     <card id="3005" file="card_3005.xml" name="" owner="1000"/>
